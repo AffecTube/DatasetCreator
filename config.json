@@ -3,5 +3,7 @@
   "margin": 4,
   "acceptance_threshold": 0.7,
   "input_dir": "../annotations",
-  "output_dir": "./dataset"
+  "output_dir": "./dataset",
+  "match_labels": false,
+  "max_fragment_size": 30
 }
