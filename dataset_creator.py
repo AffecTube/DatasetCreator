@@ -192,7 +192,8 @@ def merge_videos_annotations(annotations):
     """
     merged_videos_annotations = []
     for key, value in annotations.items():
-        merged_videos_annotations.append({'video_code': key, 'annotations': merge_annotations(value)})
+        merged_annotations = merge_annotations(value)
+        merged_videos_annotations.append({'video_code': key, 'fragments_count': len(merged_annotations), 'annotations': merged_annotations})
 
     return merged_videos_annotations
 
