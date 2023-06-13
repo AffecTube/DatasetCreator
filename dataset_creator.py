@@ -1,7 +1,35 @@
 import json
 import os
+from optparse import OptionParser
 
 config_filename = "config.json"
+
+
+def parse_options():
+    """
+    Parses script options
+    """
+    parser = OptionParser()
+    parser.add_option("-f", "--file", dest="output_filename",
+                      help="write JSON output to FILE", metavar="FILE")
+    parser.add_option("-i", "--input-dir", dest="input_dir",
+                      help="read annotations files from DIR", metavar="DIR")
+    parser.add_option("-o", "--output-dir", dest="output_dir",
+                      help="write video fragments in DIR", metavar="DIR")
+    parser.add_option("-a", "--annotations_only",
+                      action="store_true", dest="annotations_only",
+                      help="don't produce fragments, only write annotations to file")
+
+    (options, args) = parser.parse_args()
+
+    if options.output_filename is not None:
+        config['output_filename'] = options.output_filename
+    if options.input_dir is not None:
+        config['input_dir'] = options.input_dir
+    if options.output_dir is not None:
+        config['output_dir'] = options.output_dir
+    if options.annotations_only is not None:
+        config['annotations_only'] = options.annotations_only
 
 
 def json_file_to_dict(filename):
@@ -25,9 +53,18 @@ def json_broken_file_to_dict(filename):
     return json.loads(data)
 
 
+def dict_to_json_file(dict):
+    """
+    Writes dict to JSON file
+    :param dict: dict to be written
+    """
+    with open(config['output_filename'], 'w') as fp:
+        json.dump(dict, fp, indent=4)
+
+
 def events_dict_to_list(annotations):
     """
-    Process events annotated by single annotator in a single video
+    Processes events annotated by single annotator in a single video
     :param annotations: dict with annotations
     :return: list with events, each event is extended with annotator nickname
     """
@@ -42,7 +79,7 @@ def events_dict_to_list(annotations):
 
 def process_annotation_file(filename):
     """
-    Process single annotation file
+    Processes single annotation file
     :param filename: name of the file with annotations
     :return: YouTube video code, list with events
     """
@@ -54,7 +91,7 @@ def process_annotation_file(filename):
 
 def process_annotation_files():
     """
-    Process all annotation's files from directory specified in config
+    Processes all annotation's files from directory specified in config
     :return: dict containing annotated videos with corresponding list with sorted events
     """
     videos = {}
@@ -74,8 +111,10 @@ def process_annotation_files():
 
 
 config = json_file_to_dict(config_filename)
+parse_options()
 
 videos_annotations = process_annotation_files()
 
-with open("videos_annotations.json", "w") as fp:
-    json.dump(videos_annotations, fp, indent=4)
+if config['annotations_only']:
+    dict_to_json_file(videos_annotations)
+    exit(0)

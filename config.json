@@ -5,5 +5,7 @@
   "input_dir": "../annotations",
   "output_dir": "./dataset",
   "match_labels": false,
-  "max_fragment_size": 30
+  "max_fragment_size": 30,
+  "output_filename": "videos_annotations.json",
+  "annotations_only": true
 }
