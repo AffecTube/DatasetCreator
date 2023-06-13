@@ -1,11 +1,11 @@
 {
   "format": "mp4",
   "margin": 4,
-  "acceptance_threshold": 0.7,
+  "acceptance_threshold": 0.2,
   "input_dir": "../annotations",
   "output_dir": "./dataset",
   "match_labels": false,
   "max_fragment_size": 30,
   "output_filename": "videos_annotations.json",
-  "annotations_only": true
+  "annotations_only": false
 }

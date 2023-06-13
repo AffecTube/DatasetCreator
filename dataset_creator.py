@@ -110,6 +110,103 @@ def process_annotation_files():
     return videos
 
 
+def above_max_fragment_size(annotation):
+    return float(annotation['endTime']) - float(annotation['startTime']) > config['max_fragment_size']
+
+
+def merge_annotations(annotations):
+    """
+    Merge annotations for a single video file, based on acceptance_threshold, max_fragment_size and match_labels
+    :param annotations: list with a single video file annotations
+    :return: list of merged annotations
+    """
+    annotators_list = list(set([annotation['nickname'] for annotation in annotations
+                                if above_max_fragment_size(annotation)]))
+    annotators_count = len(annotators_list)
+
+    if annotators_count == 0:
+        return []
+
+    merged_annotations = [
+        {
+            'startTime': None,
+            'endTime': None,
+            'labels': set(),
+            'annotators_count': 0,
+            'annotators': set()
+        }
+    ]
+
+    # { startTime, endTime, labels:[], annotators_count, annotators }
+
+    merged_count = 0
+    annotations_count = 0
+    new_fragment = True
+    while annotations_count < len(annotations):
+        annotation = annotations[annotations_count]
+        if above_max_fragment_size(annotation):
+            annotations_count += 1
+            continue
+
+        if new_fragment:
+            merged_annotations[merged_count]['startTime'] = float(annotation['startTime'])
+            merged_annotations[merged_count]['endTime'] = float(annotation['endTime'])
+            merged_annotations[merged_count]['labels'].add(annotation['label'])
+            merged_annotations[merged_count]['annotators'].add(annotation['nickname'])
+            new_fragment = False
+        else:
+            # print(f"{merged_annotations[merged_count]['endTime']} < {float(annotation['startTime'])}")
+            # print(merged_annotations[merged_count]['endTime'] < float(annotation['startTime']))
+            if merged_annotations[merged_count]['endTime'] > float(annotation['startTime']):
+                merged_annotations[merged_count]['endTime'] = float(annotation['endTime'])
+                merged_annotations[merged_count]['labels'].add(annotation['label'])
+                merged_annotations[merged_count]['annotators'].add(annotation['nickname'])
+            else:
+                agreement_ratio = (len(merged_annotations[merged_count]['annotators'])/annotators_count)
+                if agreement_ratio >= config['acceptance_threshold']:
+                    merged_annotations[merged_count]['annotators_count'] = len(merged_annotations[merged_count]['annotators'])
+                    merged_annotations[merged_count]['labels'] = list(merged_annotations[merged_count]['labels'])
+                    merged_annotations[merged_count]['annotators'] = list(merged_annotations[merged_count]['annotators'])
+                    merged_count += 1
+                else:
+                    merged_annotations.pop()
+                merged_annotations.append(
+                    {
+                        'startTime': float(annotation['startTime']),
+                        'endTime': float(annotation['endTime']),
+                        'labels': set([annotation['label']]),
+                        'annotators_count': 0,
+                        'annotators': set([annotation['nickname']])
+                    }
+                )
+        annotations_count += 1
+
+    agreement_ratio = (len(merged_annotations[merged_count]['annotators']) / annotators_count)
+
+    if agreement_ratio >= config['acceptance_threshold']:
+        merged_annotations[merged_count]['annotators_count'] = len(merged_annotations[merged_count]['annotators'])
+        merged_annotations[merged_count]['labels'] = list(merged_annotations[merged_count]['labels'])
+        merged_annotations[merged_count]['annotators'] = list(merged_annotations[merged_count]['annotators'])
+        merged_count += 1
+    else:
+        merged_annotations.pop()
+
+    return merged_annotations
+
+
+def merge_videos_annotations(annotations):
+    """
+    Merge annotations for all video files
+    :param annotations: dict with annotations for all video files
+    :return: videos dict with merged annotations
+    """
+    merged_videos_annotations = []
+    for key, value in annotations.items():
+        merged_videos_annotations.append({'video_code': key, 'annotations': merge_annotations(value)})
+
+    return merged_videos_annotations
+
+
 config = json_file_to_dict(config_filename)
 parse_options()
 
@@ -118,3 +215,5 @@ videos_annotations = process_annotation_files()
 if config['annotations_only']:
     dict_to_json_file(videos_annotations)
     exit(0)
+
+dict_to_json_file(merge_videos_annotations(videos_annotations))
