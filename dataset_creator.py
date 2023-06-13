@@ -129,56 +129,46 @@ def merge_annotations(annotations):
 
     merged_annotations = [
         {
-            'startTime': None,
-            'endTime': None,
-            'labels': set(),
+            'startTime': float(annotations[0]['startTime']),
+            'endTime': float(annotations[0]['endTime']),
+            'labels': {annotations[0]['label']},
             'annotators_count': 0,
-            'annotators': set()
+            'annotators': {annotations[0]['nickname']}
         }
     ]
 
-    # { startTime, endTime, labels:[], annotators_count, annotators }
-
     merged_count = 0
-    annotations_count = 0
-    new_fragment = True
+    annotations_count = 1
+    # new_fragment = True
     while annotations_count < len(annotations):
         annotation = annotations[annotations_count]
+
         if above_max_fragment_size(annotation):
             annotations_count += 1
             continue
 
-        if new_fragment:
-            merged_annotations[merged_count]['startTime'] = float(annotation['startTime'])
+        if merged_annotations[merged_count]['endTime'] > float(annotation['startTime']):
             merged_annotations[merged_count]['endTime'] = float(annotation['endTime'])
             merged_annotations[merged_count]['labels'].add(annotation['label'])
             merged_annotations[merged_count]['annotators'].add(annotation['nickname'])
-            new_fragment = False
         else:
-            # print(f"{merged_annotations[merged_count]['endTime']} < {float(annotation['startTime'])}")
-            # print(merged_annotations[merged_count]['endTime'] < float(annotation['startTime']))
-            if merged_annotations[merged_count]['endTime'] > float(annotation['startTime']):
-                merged_annotations[merged_count]['endTime'] = float(annotation['endTime'])
-                merged_annotations[merged_count]['labels'].add(annotation['label'])
-                merged_annotations[merged_count]['annotators'].add(annotation['nickname'])
+            agreement_ratio = (len(merged_annotations[merged_count]['annotators'])/annotators_count)
+            if agreement_ratio >= config['acceptance_threshold']:
+                merged_annotations[merged_count]['annotators_count'] = len(merged_annotations[merged_count]['annotators'])
+                merged_annotations[merged_count]['labels'] = list(merged_annotations[merged_count]['labels'])
+                merged_annotations[merged_count]['annotators'] = list(merged_annotations[merged_count]['annotators'])
+                merged_count += 1
             else:
-                agreement_ratio = (len(merged_annotations[merged_count]['annotators'])/annotators_count)
-                if agreement_ratio >= config['acceptance_threshold']:
-                    merged_annotations[merged_count]['annotators_count'] = len(merged_annotations[merged_count]['annotators'])
-                    merged_annotations[merged_count]['labels'] = list(merged_annotations[merged_count]['labels'])
-                    merged_annotations[merged_count]['annotators'] = list(merged_annotations[merged_count]['annotators'])
-                    merged_count += 1
-                else:
-                    merged_annotations.pop()
-                merged_annotations.append(
-                    {
-                        'startTime': float(annotation['startTime']),
-                        'endTime': float(annotation['endTime']),
-                        'labels': set([annotation['label']]),
-                        'annotators_count': 0,
-                        'annotators': set([annotation['nickname']])
-                    }
-                )
+                merged_annotations.pop()
+            merged_annotations.append(
+                {
+                    'startTime': float(annotation['startTime']),
+                    'endTime': float(annotation['endTime']),
+                    'labels': {annotation['label']},
+                    'annotators_count': 0,
+                    'annotators': {annotation['nickname']}
+                }
+            )
         annotations_count += 1
 
     agreement_ratio = (len(merged_annotations[merged_count]['annotators']) / annotators_count)
