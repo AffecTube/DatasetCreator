@@ -111,22 +111,21 @@ def process_annotation_files():
 
 
 def above_max_fragment_size(annotation):
+    """
+    Checks if annotation is above max_fragment length
+    :param annotation: single annotation
+    :return: True if annotation is above max_fragment length, otherwise False
+    """
     return float(annotation['endTime']) - float(annotation['startTime']) > config['max_fragment_size']
 
 
-def merge_annotations(annotations):
+def merge_annotations_any_label(annotations, annotators_count):
     """
-    Merge annotations for a single video file, based on acceptance_threshold, max_fragment_size and match_labels
+    Merging annotations for a single video file without checking label matches
+    :param annotators_count: number of annotators
     :param annotations: list with a single video file annotations
     :return: list of merged annotations
     """
-    annotators_list = list(set([annotation['nickname'] for annotation in annotations
-                                if above_max_fragment_size(annotation)]))
-    annotators_count = len(annotators_list)
-
-    if annotators_count == 0:
-        return []
-
     merged_annotations = [
         {
             'startTime': float(annotations[0]['startTime']),
@@ -139,7 +138,7 @@ def merge_annotations(annotations):
 
     merged_count = 0
     annotations_count = 1
-    # new_fragment = True
+
     while annotations_count < len(annotations):
         annotation = annotations[annotations_count]
 
@@ -147,41 +146,126 @@ def merge_annotations(annotations):
             annotations_count += 1
             continue
 
-        if merged_annotations[merged_count]['endTime'] > float(annotation['startTime']):
-            merged_annotations[merged_count]['endTime'] = float(annotation['endTime'])
-            merged_annotations[merged_count]['labels'].add(annotation['label'])
-            merged_annotations[merged_count]['annotators'].add(annotation['nickname'])
+        current_merged = merged_annotations[merged_count]
+
+        if current_merged['endTime'] > float(annotation['startTime']):
+            if current_merged['endTime'] < float(annotation['endTime']):
+                current_merged['endTime'] = float(annotation['endTime'])
+            current_merged['labels'].add(annotation['label'])
+            current_merged['annotators'].add(annotation['nickname'])
         else:
-            agreement_ratio = (len(merged_annotations[merged_count]['annotators'])/annotators_count)
+            agreement_ratio = len(current_merged['annotators']) / annotators_count
+
             if agreement_ratio >= config['acceptance_threshold']:
-                merged_annotations[merged_count]['annotators_count'] = len(merged_annotations[merged_count]['annotators'])
-                merged_annotations[merged_count]['labels'] = list(merged_annotations[merged_count]['labels'])
-                merged_annotations[merged_count]['annotators'] = list(merged_annotations[merged_count]['annotators'])
+                current_merged['annotators_count'] = len(current_merged['annotators'])
+                current_merged['labels'] = list(current_merged['labels'])
+                current_merged['annotators'] = list(current_merged['annotators'])
                 merged_count += 1
             else:
                 merged_annotations.pop()
-            merged_annotations.append(
-                {
-                    'startTime': float(annotation['startTime']),
-                    'endTime': float(annotation['endTime']),
-                    'labels': {annotation['label']},
-                    'annotators_count': 0,
-                    'annotators': {annotation['nickname']}
-                }
-            )
+
+            merged_annotations.append({
+                'startTime': float(annotation['startTime']),
+                'endTime': float(annotation['endTime']),
+                'labels': {annotation['label']},
+                'annotators_count': 0,
+                'annotators': {annotation['nickname']}
+            })
+
         annotations_count += 1
 
-    agreement_ratio = (len(merged_annotations[merged_count]['annotators']) / annotators_count)
+    current_merged = merged_annotations[merged_count]
+    agreement_ratio = len(current_merged['annotators']) / annotators_count
 
     if agreement_ratio >= config['acceptance_threshold']:
-        merged_annotations[merged_count]['annotators_count'] = len(merged_annotations[merged_count]['annotators'])
-        merged_annotations[merged_count]['labels'] = list(merged_annotations[merged_count]['labels'])
-        merged_annotations[merged_count]['annotators'] = list(merged_annotations[merged_count]['annotators'])
+        current_merged['annotators_count'] = len(current_merged['annotators'])
+        current_merged['labels'] = list(current_merged['labels'])
+        current_merged['annotators'] = list(current_merged['annotators'])
         merged_count += 1
     else:
         merged_annotations.pop()
 
     return merged_annotations
+
+
+def merged_annotation_dict(annotation):
+    """
+    Returns dict for single annotation
+    :param annotation: single annotation
+    :return: dict for single annotation
+    """
+    return {
+        'startTime': float(annotation['startTime']),
+        'endTime': float(annotation['endTime']),
+        'annotators_count': 0,
+        'annotators': {annotation['nickname']}
+    }
+
+
+def merge_annotations_match_labels(annotations, annotators_count):
+    """
+    Merging annotations for a single video file with label matching checks
+    :param annotators_count: number of annotators
+    :param annotations: list with a single video file annotations
+    :return: list of merged annotations
+    """
+
+    if annotators_count == 0:
+        return []
+
+    temp_merged_annotations = {}
+    merged_annotations = []
+
+    for annotation in annotations:
+        if above_max_fragment_size(annotation):
+            continue
+
+        if annotation['label'] in temp_merged_annotations:
+            current_temp_merged = temp_merged_annotations[annotation['label']]
+
+            if current_temp_merged['endTime'] > float(annotation['startTime']):
+                if current_temp_merged['endTime'] < float(annotation['endTime']):
+                    current_temp_merged['endTime'] = float(annotation['endTime'])
+                current_temp_merged['annotators'].add(annotation['nickname'])
+            else:
+                agreement_ratio = len(current_temp_merged['annotators']) / annotators_count
+                if agreement_ratio >= config['acceptance_threshold']:
+                    current_temp_merged['annotators_count'] = len(current_temp_merged['annotators'])
+                    current_temp_merged['labels'] = list({annotation['label']})
+                    current_temp_merged['annotators'] = list(current_temp_merged['annotators'])
+                    merged_annotations.append(current_temp_merged)
+                temp_merged_annotations[annotation['label']] = merged_annotation_dict(annotation)
+
+        else:
+            temp_merged_annotations[annotation['label']] = merged_annotation_dict(annotation)
+
+    for key, value in temp_merged_annotations.items():
+        value['labels'] = [key]
+        value['annotators_count'] = len(value['annotators'])
+        value['annotators'] = list(value['annotators'])
+
+        merged_annotations.append(value)
+
+    return sorted(merged_annotations, key=lambda single_annotation: float(single_annotation['startTime']))
+
+
+def merge_annotations(annotations):
+    """
+    Merge annotations for a single video file, based on acceptance_threshold, max_fragment_size and match_labels
+    :param annotations: list with a single video file annotations
+    :return: list of merged annotations
+    """
+    annotators_list = list(set(annotation['nickname'] for annotation in annotations
+                               if above_max_fragment_size(annotation)))
+    annotators_count = len(annotators_list)
+
+    if annotators_count == 0:
+        return []
+
+    if config['match_labels']:
+        return merge_annotations_match_labels(annotations, annotators_count)
+    else:
+        return merge_annotations_any_label(annotations, annotators_count)
 
 
 def merge_videos_annotations(annotations):
@@ -193,7 +277,8 @@ def merge_videos_annotations(annotations):
     merged_videos_annotations = []
     for key, value in annotations.items():
         merged_annotations = merge_annotations(value)
-        merged_videos_annotations.append({'video_code': key, 'fragments_count': len(merged_annotations), 'annotations': merged_annotations})
+        merged_videos_annotations.append(
+            {'video_code': key, 'fragments_count': len(merged_annotations), 'annotations': merged_annotations})
 
     return merged_videos_annotations
 
