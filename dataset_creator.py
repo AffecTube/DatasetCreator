@@ -2,6 +2,8 @@ import json
 import os
 from optparse import OptionParser
 
+from video_downloader import video_download
+
 config_filename = "config.json"
 
 
@@ -16,9 +18,15 @@ def parse_options():
                       help="read annotations files from DIR", metavar="DIR")
     parser.add_option("-o", "--output-dir", dest="output_dir",
                       help="write video fragments in DIR", metavar="DIR")
-    parser.add_option("-a", "--annotations_only",
-                      action="store_true", dest="annotations_only",
-                      help="don't produce fragments, only write annotations to file")
+    parser.add_option("-r", "--raw_annotations_only",
+                      action="store_true", dest="raw_annotations_only",
+                      help="don't produce fragments, only write raw annotations to file")
+    parser.add_option("-m", "--merged_annotations_only",
+                      action="store_true", dest="merged_annotations_only",
+                      help="don't produce fragments, only write merged annotations to file")
+    parser.add_option("-d", "--download_from_youtube",
+                      action="store_true", dest="download_from_youtube",
+                      help="download video files from YouTube. If FALSE, video file should be already in  OUTPUT DIR")
 
     (options, args) = parser.parse_args()
 
@@ -28,8 +36,12 @@ def parse_options():
         config['input_dir'] = options.input_dir
     if options.output_dir is not None:
         config['output_dir'] = options.output_dir
-    if options.annotations_only is not None:
-        config['annotations_only'] = options.annotations_only
+    if options.raw_annotations_only is not None:
+        config['raw_annotations_only'] = options.raw_annotations_only
+    if options.merged_annotations_only is not None:
+        config['merged_annotations_only'] = options.merged_annotations_only
+    if options.download_from_youtube is not None:
+        config['download_from_youtube'] = options.download_from_youtube
 
 
 def json_file_to_dict(filename):
@@ -286,10 +298,19 @@ def merge_videos_annotations(annotations):
 config = json_file_to_dict(config_filename)
 parse_options()
 
-videos_annotations = process_annotation_files()
+raw_videos_annotations = process_annotation_files()
 
-if config['annotations_only']:
-    dict_to_json_file(videos_annotations)
+if config['raw_annotations_only']:
+    dict_to_json_file(raw_videos_annotations)
     exit(0)
 
-dict_to_json_file(merge_videos_annotations(videos_annotations))
+merged_videos_annotations = merge_videos_annotations(raw_videos_annotations)
+if config['merged_annotations_only']:
+    dict_to_json_file(merged_videos_annotations)
+    exit(0)
+
+os.makedirs(config['output_dir'], exist_ok=True)
+for video_annotation in merged_videos_annotations:
+    if config['download_from_youtube']:
+        video_download(video_annotation['video_code'], config['output_dir'])
+    exit(0)
