@@ -4,10 +4,10 @@
   "acceptance_threshold": 0.7,
   "input_dir": "../annotations",
   "output_dir": "./dataset",
-  "match_labels": false,
+  "match_labels": true,
   "max_fragment_size": 30,
   "output_filename": "videos_annotations.json",
   "raw_annotations_only": false,
   "merged_annotations_only": false,
-  "download_from_youtube": false
+  "download_from_youtube": true
 }

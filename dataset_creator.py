@@ -2,6 +2,8 @@ import json
 import os
 from optparse import OptionParser
 
+import ffmpeg
+
 from video_downloader import video_download
 
 config_filename = "config.json"
@@ -240,11 +242,12 @@ def merge_annotations_match_labels(annotations, annotators_count):
                     current_temp_merged['endTime'] = float(annotation['endTime'])
                 current_temp_merged['annotators'].add(annotation['nickname'])
             else:
-                agreement_ratio = len(current_temp_merged['annotators']) / annotators_count
+                agreement_ratio = len(set(current_temp_merged['annotators'])) / annotators_count
                 if agreement_ratio >= config['acceptance_threshold']:
                     current_temp_merged['annotators_count'] = len(current_temp_merged['annotators'])
                     current_temp_merged['labels'] = list({annotation['label']})
                     current_temp_merged['annotators'] = list(current_temp_merged['annotators'])
+                    current_temp_merged['agreement_ratio'] = agreement_ratio
                     merged_annotations.append(current_temp_merged)
                 temp_merged_annotations[annotation['label']] = merged_annotation_dict(annotation)
 
@@ -252,11 +255,13 @@ def merge_annotations_match_labels(annotations, annotators_count):
             temp_merged_annotations[annotation['label']] = merged_annotation_dict(annotation)
 
     for key, value in temp_merged_annotations.items():
-        value['labels'] = [key]
-        value['annotators_count'] = len(value['annotators'])
-        value['annotators'] = list(value['annotators'])
-
-        merged_annotations.append(value)
+        agreement_ratio = len(value['annotators']) / annotators_count
+        if agreement_ratio >= config['acceptance_threshold']:
+            value['labels'] = [key]
+            value['annotators_count'] = len(value['annotators'])
+            value['annotators'] = list(value['annotators'])
+            value['agreement_ratio'] = agreement_ratio
+            merged_annotations.append(value)
 
     return sorted(merged_annotations, key=lambda single_annotation: float(single_annotation['startTime']))
 
@@ -268,7 +273,8 @@ def merge_annotations(annotations):
     :return: list of merged annotations
     """
     annotators_list = list(set(annotation['nickname'] for annotation in annotations
-                               if above_max_fragment_size(annotation)))
+                               # if above_max_fragment_size(annotation)
+                               ))
     annotators_count = len(annotators_list)
 
     if annotators_count == 0:
@@ -295,6 +301,25 @@ def merge_videos_annotations(annotations):
     return merged_videos_annotations
 
 
+def generate_annotated_fragments(single_video_annotations):
+    fragments_count = 1
+    leading_zeros_number = len(str(single_video_annotations['fragments_count']))
+    input_video_file = f"{single_video_annotations['video_code']}.mp4"
+    print(f"Processing {input_video_file}, extracting {single_video_annotations['fragments_count']} fragments")
+    for annotation in single_video_annotations['annotations']:
+        output_video_file = f"{single_video_annotations['video_code']}_{str(fragments_count).zfill(leading_zeros_number)}.mp4"
+        print(f"Extracting: {config['output_dir']}/{output_video_file}")
+        pipe = (
+            ffmpeg.input(f"{config['output_dir']}/{input_video_file}")
+            .trim(start=annotation['startTime'], end=annotation['endTime'])
+            .setpts('PTS-STARTPTS')
+            .output(f"{config['output_dir']}/{output_video_file}")
+            .overwrite_output()
+            .run(quiet=True)
+        )
+        fragments_count += 1
+
+
 config = json_file_to_dict(config_filename)
 parse_options()
 
@@ -310,7 +335,13 @@ if config['merged_annotations_only']:
     exit(0)
 
 os.makedirs(config['output_dir'], exist_ok=True)
-for video_annotation in merged_videos_annotations:
+for video_annotations in merged_videos_annotations:
     if config['download_from_youtube']:
-        video_download(video_annotation['video_code'], config['output_dir'])
-    exit(0)
+        video_download(video_annotations['video_code'], config['output_dir'])
+
+    if os.path.isfile(f"{config['output_dir']}/{video_annotations['video_code']}.mp4"):
+        generate_annotated_fragments(video_annotations)
+    else:
+        print(f"Video file {config['output_dir']}/{video_annotations['video_code']}.mp4 does not exists")
+        exit(1)
+
