@@ -302,11 +302,16 @@ def merge_videos_annotations(annotations):
 
 
 def generate_annotated_fragments(single_video_annotations):
+    """
+    Generates video files with emotional annotated fragments
+    :param single_video_annotations: list of merged annotations of a single video file
+    :return: update with fragment file name annotation list
+    """
     fragments_count = 1
     leading_zeros_number = len(str(single_video_annotations['fragments_count']))
     input_video_file = f"{single_video_annotations['video_code']}.mp4"
     print(f"Processing {input_video_file}, extracting {single_video_annotations['fragments_count']} fragments")
-    for annotation in single_video_annotations['annotations']:
+    for i, annotation in enumerate(single_video_annotations['annotations']):
         output_video_file = f"{single_video_annotations['video_code']}_{str(fragments_count).zfill(leading_zeros_number)}.mp4"
         print(f"Extracting: {config['output_dir']}/{output_video_file}")
         pipe = (
@@ -318,6 +323,9 @@ def generate_annotated_fragments(single_video_annotations):
             .run(quiet=True)
         )
         fragments_count += 1
+        single_video_annotations['annotations'][i]['filename'] = output_video_file;
+
+    return single_video_annotations
 
 
 config = json_file_to_dict(config_filename)
@@ -335,13 +343,16 @@ if config['merged_annotations_only']:
     exit(0)
 
 os.makedirs(config['output_dir'], exist_ok=True)
-for video_annotations in merged_videos_annotations:
+for i, video_annotations in enumerate(merged_videos_annotations):
     if config['download_from_youtube']:
         video_download(video_annotations['video_code'], config['output_dir'])
 
     if os.path.isfile(f"{config['output_dir']}/{video_annotations['video_code']}.mp4"):
-        generate_annotated_fragments(video_annotations)
+        merged_videos_annotations[i] = generate_annotated_fragments(video_annotations)
+
     else:
         print(f"Video file {config['output_dir']}/{video_annotations['video_code']}.mp4 does not exists")
         exit(1)
+
+dict_to_json_file(merged_videos_annotations)
 
