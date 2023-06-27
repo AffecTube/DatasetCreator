@@ -2,7 +2,7 @@
 _DatasetCreator_ script processes annotation data collected with the [AffecTube](https://github.com/AffecTube/AffecTube) extension,
 downloads videos from YouTube and generates emotion-labeled video fragments.
 
-Run the script with `-h` option to view all available options. Alternately, set
+Run the script with `-h` option to view all available options. Alternatively, set
 the required setting in the `config.json` file. 
 
 ```bash
