@@ -29,7 +29,8 @@ def parse_options():
     parser.add_option("-d", "--download_from_youtube",
                       action="store_true", dest="download_from_youtube",
                       help="download video files from YouTube. If FALSE, video file should be already in  OUTPUT DIR")
-
+    parser.add_option("-n", "--margin", dest="margin",
+                      help="margin added to the annotated fragment (in seconds)", metavar="VALUE")
     (options, args) = parser.parse_args()
 
     if options.output_filename is not None:
@@ -44,7 +45,8 @@ def parse_options():
         config['merged_annotations_only'] = options.merged_annotations_only
     if options.download_from_youtube is not None:
         config['download_from_youtube'] = options.download_from_youtube
-
+    if options.margin is not None:
+        config['margin'] = options.margin
 
 def json_file_to_dict(filename):
     """
@@ -314,9 +316,13 @@ def generate_annotated_fragments(single_video_annotations):
     for i, annotation in enumerate(single_video_annotations['annotations']):
         output_video_file = f"{single_video_annotations['video_code']}_{str(fragments_count).zfill(leading_zeros_number)}.mp4"
         print(f"Extracting: {config['output_dir']}/{output_video_file}")
+        start_time = annotation['startTime'] - config['margin']
+        if start_time < 0:
+            start_time = 0
+        end_time = annotation['endTime'] + config['margin']
         pipe = (
             ffmpeg.input(f"{config['output_dir']}/{input_video_file}")
-            .trim(start=annotation['startTime'], end=annotation['endTime'])
+            .trim(start=start_time, end=end_time)
             .setpts('PTS-STARTPTS')
             .output(f"{config['output_dir']}/{output_video_file}")
             .overwrite_output()
