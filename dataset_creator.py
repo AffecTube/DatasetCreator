@@ -48,6 +48,7 @@ def parse_options():
     if options.margin is not None:
         config['margin'] = options.margin
 
+
 def json_file_to_dict(filename):
     """
     Reads the JSON file
@@ -58,24 +59,13 @@ def json_file_to_dict(filename):
         return json.load(file)
 
 
-def json_broken_file_to_dict(filename):
-    """
-    Reads the "broken" JSON file
-    :param filename: JSON file name
-    :return: Deserialized JSON to dict
-    """
-    with open(filename, 'r') as file:
-        data = file.read().rstrip().lstrip('"').rstrip('"').replace('\\', '')
-    return json.loads(data)
-
-
-def dict_to_json_file(dict):
+def dict_to_json_file(dictionary):
     """
     Writes dict to JSON file
-    :param dict: dict to be written
+    :param dictionary: dict to be written
     """
     with open(config['output_filename'], 'w') as fp:
-        json.dump(dict, fp, indent=4)
+        json.dump(dictionary, fp, indent=4)
 
 
 def events_dict_to_list(annotations):
@@ -99,7 +89,7 @@ def process_annotation_file(filename):
     :param filename: name of the file with annotations
     :return: YouTube video code, list with events
     """
-    annotations = json_broken_file_to_dict(filename)
+    annotations = json_file_to_dict(filename)
     video_code = annotations['videoURL']
     events = events_dict_to_list(annotations)
     return video_code, events
@@ -330,6 +320,8 @@ def generate_annotated_fragments(single_video_annotations):
         )
         fragments_count += 1
         single_video_annotations['annotations'][i]['filename'] = output_video_file;
+        single_video_annotations['annotations'][i]['startTime'] = round(start_time, 2);
+        single_video_annotations['annotations'][i]['endTime'] = round(end_time, 2);
 
     return single_video_annotations
 
@@ -361,4 +353,3 @@ for i, video_annotations in enumerate(merged_videos_annotations):
         exit(1)
 
 dict_to_json_file(merged_videos_annotations)
-
