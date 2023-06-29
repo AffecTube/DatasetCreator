@@ -48,6 +48,7 @@ def parse_options():
     if options.margin is not None:
         config['margin'] = options.margin
 
+
 def json_file_to_dict(filename):
     """
     Reads the JSON file
@@ -58,24 +59,13 @@ def json_file_to_dict(filename):
         return json.load(file)
 
 
-def json_broken_file_to_dict(filename):
-    """
-    Reads the "broken" JSON file
-    :param filename: JSON file name
-    :return: Deserialized JSON to dict
-    """
-    with open(filename, 'r') as file:
-        data = file.read().rstrip().lstrip('"').rstrip('"').replace('\\', '')
-    return json.loads(data)
-
-
-def dict_to_json_file(dict):
+def dict_to_json_file(dictionary):
     """
     Writes dict to JSON file
-    :param dict: dict to be written
+    :param dictionary: dict to be written
     """
     with open(config['output_filename'], 'w') as fp:
-        json.dump(dict, fp, indent=4)
+        json.dump(dictionary, fp, indent=4)
 
 
 def events_dict_to_list(annotations):
@@ -99,7 +89,7 @@ def process_annotation_file(filename):
     :param filename: name of the file with annotations
     :return: YouTube video code, list with events
     """
-    annotations = json_broken_file_to_dict(filename)
+    annotations = json_file_to_dict(filename)
     video_code = annotations['videoURL']
     events = events_dict_to_list(annotations)
     return video_code, events
@@ -275,7 +265,7 @@ def merge_annotations(annotations):
     :return: list of merged annotations
     """
     annotators_list = list(set(annotation['nickname'] for annotation in annotations
-                               # if above_max_fragment_size(annotation)
+                               if not above_max_fragment_size(annotation)
                                ))
     annotators_count = len(annotators_list)
 
@@ -361,4 +351,3 @@ for i, video_annotations in enumerate(merged_videos_annotations):
         exit(1)
 
 dict_to_json_file(merged_videos_annotations)
-

@@ -1,5 +1,4 @@
 {
-  "format": "mp4",
   "margin": 4,
   "acceptance_threshold": 0.7,
   "input_dir": "../annotations",
