@@ -90,6 +90,28 @@ def events_dict_to_list(annotations):
             events.append(value)
     return events
 
+def time_to_seconds(given_time: str):
+    (hours, minutes, seconds) = given_time.split(':')
+    return round(int(hours)*3600+int(minutes)*60+float(seconds),4)
+
+def events_dict_to_list_loves(annotations):
+    """
+    Processes events annotated by single annotator in a single video
+    :param annotations: dict with annotations
+    :return: list with events, each event is extended with annotator nickname
+    """
+    events = []
+    annotator_nickname = annotations['assigneeName']
+    for value in annotations['eventList']:
+        if type(value) is dict:
+            new_value = {
+                'nickname': annotator_nickname,
+                'startTime': time_to_seconds(value['start']),
+                'endTime': time_to_seconds(value['end']),
+                'label': value['label']['name']
+            }
+            events.append(new_value)
+    return events
 
 def process_annotation_file(filename):
     """
@@ -102,6 +124,16 @@ def process_annotation_file(filename):
     events = events_dict_to_list(annotations)
     return video_code, events
 
+def process_annotation_file_loves(filename):
+    """
+    Processes single annotation file
+    :param filename: name of the file with annotations
+    :return: YouTube video code, list with events
+    """
+    annotations = json_file_to_dict(filename)
+    video_code = annotations['videoSetName']
+    events = events_dict_to_list_loves(annotations)
+    return video_code, events
 
 def process_annotation_files():
     """
@@ -112,6 +144,26 @@ def process_annotation_files():
 
     for json_file in os.listdir(config['input_dir']):
         (video_code, events) = process_annotation_file(f"{config['input_dir']}/{json_file}")
+
+        if video_code not in videos:
+            videos[video_code] = []
+
+        videos[video_code].extend(events)
+
+    for key, value in videos.items():
+        videos[key] = sorted(value, key=lambda annotation: float(annotation['startTime']))
+
+    return videos
+
+def process_annotation_files_loves():
+    """
+    Processes all annotation's files from directory specified in config
+    :return: dict containing annotated videos with corresponding list with sorted events
+    """
+    videos = {}
+
+    for json_file in os.listdir(config['input_dir_loves']):
+        (video_code, events) = process_annotation_file_loves(f"{config['input_dir_loves']}/{json_file}")
 
         if video_code not in videos:
             videos[video_code] = []
@@ -331,8 +383,9 @@ def generate_annotated_fragments(single_video_annotations):
 config = json_file_to_dict(config_filename)
 parse_options()
 
-raw_videos_annotations = process_annotation_files()
-
+raw_videos_annotations_orig = process_annotation_files()
+raw_videos_annotations_loves = process_annotation_files_loves()
+raw_videos_annotations = {**raw_videos_annotations_orig, **raw_videos_annotations_loves}
 if config['raw_annotations_only']:
     dict_to_json_file(raw_videos_annotations)
     exit(0)

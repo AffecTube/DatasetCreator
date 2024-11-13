@@ -8,5 +8,6 @@
   "merged_annotations_only": true,
   "download_from_youtube": false,
   "max_fragment_size": 30,
-  "margin": 4
+  "margin": 4,
+  "input_dir_loves": "/home/wrobel/DevEmo/loves"
 }
