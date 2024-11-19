@@ -1,13 +1,14 @@
 {
-  "input_dir": "../annotations",
+  "input_dir": "/home/wrobel/DevEmo/affectube",
   "output_dir": "./dataset",
   "output_filename": "videos_annotations.json",
-  "acceptance_threshold": 0.7,
+  "acceptance_threshold": 0.8,
   "match_labels": false,
   "raw_annotations_only": false,
   "merged_annotations_only": true,
   "download_from_youtube": false,
-  "max_fragment_size": 30,
+  "max_fragment_size": 20,
   "margin": 4,
-  "input_dir_loves": "/home/wrobel/DevEmo/loves"
+  "input_dir_loves": "/home/wrobel/DevEmo/loves",
+  "input_dir_emodetective": "/home/wrobel/DevEmo/emodetective"
 }

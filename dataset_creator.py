@@ -8,6 +8,25 @@ from video_downloader import video_download
 
 config_filename = "config.json"
 
+file_name_conversion = {
+    'thj1plVKeeI': 'group01',
+    'dy5Neh59HWg': 'group02',
+    'Cu7pKk8KpOY': 'group03',
+    'aVdtDpw_jCM': 'group04',
+    '20dbLH0poU8': 'group05',
+    'F13_Ol7gEH0': 'group06',
+    'YdnyczG3gts': 'group07',
+    '8ZUQGOUOO_M': 'group08',
+    'bfKYpmWU8lw': 'group09',
+    'zkjJxxHfw28': 'group10',
+    'ls3mWEtv84U': 'group11',
+    'IVl2oQMuIZ0': 'group12',
+    'y_ytXT9MboI': 'group13',
+    'NHtPvfSDYRo': 'group14',
+    'T1uM56Pf6Xw': 'group15',
+    '-keWZ8i7HC4': 'group16'
+
+}
 
 def parse_options():
     """
@@ -113,6 +132,25 @@ def events_dict_to_list_loves(annotations):
             events.append(new_value)
     return events
 
+def events_dict_to_list_emodetective(annotations):
+    """
+    Processes events annotated by single annotator in a single video
+    :param annotations: dict with annotations
+    :return: list with events, each event is extended with annotator nickname
+    """
+    events = []
+    annotator_nickname = annotations['nickname']
+    for value in annotations['annotations']:
+        if type(value) is dict:
+            new_value = {
+                'nickname': annotator_nickname,
+                'startTime': time_to_seconds(value['startTime']),
+                'endTime': time_to_seconds(value['endTime']),
+                'label': value['label']
+            }
+            events.append(new_value)
+    return events
+
 def process_annotation_file(filename):
     """
     Processes single annotation file
@@ -120,7 +158,9 @@ def process_annotation_file(filename):
     :return: YouTube video code, list with events
     """
     annotations = json_broken_file_to_dict(filename)
-    video_code = annotations['videoURL']
+    video_code = file_name_conversion[annotations['videoURL']] \
+        if annotations['videoURL'] in file_name_conversion \
+        else annotations['videoURL']
     events = events_dict_to_list(annotations)
     return video_code, events
 
@@ -135,6 +175,18 @@ def process_annotation_file_loves(filename):
     events = events_dict_to_list_loves(annotations)
     return video_code, events
 
+def process_annotation_file_emodetective(filename):
+    """
+    Processes single annotation file
+    :param filename: name of the file with annotations
+    :return: YouTube video code, list with events
+    """
+    annotations = json_file_to_dict(filename)
+    video_url: str = annotations['videoURL']
+    video_code = os.path.splitext(os.path.basename(video_url))[0]
+    events = events_dict_to_list_emodetective(annotations)
+    return video_code, events
+
 def process_annotation_files():
     """
     Processes all annotation's files from directory specified in config
@@ -144,11 +196,11 @@ def process_annotation_files():
 
     for json_file in os.listdir(config['input_dir']):
         (video_code, events) = process_annotation_file(f"{config['input_dir']}/{json_file}")
+        if len(events) > 0:
+            if video_code not in videos:
+                videos[video_code] = []
 
-        if video_code not in videos:
-            videos[video_code] = []
-
-        videos[video_code].extend(events)
+            videos[video_code].extend(events)
 
     for key, value in videos.items():
         videos[key] = sorted(value, key=lambda annotation: float(annotation['startTime']))
@@ -164,6 +216,26 @@ def process_annotation_files_loves():
 
     for json_file in os.listdir(config['input_dir_loves']):
         (video_code, events) = process_annotation_file_loves(f"{config['input_dir_loves']}/{json_file}")
+
+        if video_code not in videos:
+            videos[video_code] = []
+
+        videos[video_code].extend(events)
+
+    for key, value in videos.items():
+        videos[key] = sorted(value, key=lambda annotation: float(annotation['startTime']))
+
+    return videos
+
+def process_annotation_files_emodetective():
+    """
+    Processes all annotation's files from directory specified in config
+    :return: dict containing annotated videos with corresponding list with sorted events
+    """
+    videos = {}
+
+    for json_file in os.listdir(config['input_dir_emodetective']):
+        (video_code, events) = process_annotation_file_emodetective(f"{config['input_dir_emodetective']}/{json_file}")
 
         if video_code not in videos:
             videos[video_code] = []
@@ -192,18 +264,27 @@ def merge_annotations_any_label(annotations, annotators_count):
     :param annotations: list with a single video file annotations
     :return: list of merged annotations
     """
+    annotations_count = 0
+    while annotations_count < len(annotations):
+        annotation = annotations[annotations_count]
+
+        if not above_max_fragment_size(annotation):
+            break
+
+        annotations_count += 1
+
+
     merged_annotations = [
         {
-            'startTime': float(annotations[0]['startTime']),
-            'endTime': float(annotations[0]['endTime']),
-            'labels': {annotations[0]['label']},
+            'startTime': float(annotations[annotations_count]['startTime']),
+            'endTime': float(annotations[annotations_count]['endTime']),
+            'labels': {annotations[annotations_count]['label']},
             'annotators_count': 0,
-            'annotators': {annotations[0]['nickname']}
+            'annotators': {annotations[annotations_count]['nickname']}
         }
     ]
 
     merged_count = 0
-    annotations_count = 1
 
     while annotations_count < len(annotations):
         annotation = annotations[annotations_count]
@@ -385,6 +466,7 @@ parse_options()
 
 raw_videos_annotations_orig = process_annotation_files()
 raw_videos_annotations_loves = process_annotation_files_loves()
+raw_videos_annotations_emodetective = process_annotation_files_emodetective()
 raw_videos_annotations = {**raw_videos_annotations_orig, **raw_videos_annotations_loves}
 if config['raw_annotations_only']:
     dict_to_json_file(raw_videos_annotations)
