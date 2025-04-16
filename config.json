@@ -1,13 +1,13 @@
 {
-  "input_dir": "../annotations",
-  "output_dir": "./dataset",
-  "output_filename": "videos_annotations.json",
-  "acceptance_threshold": 0.7,
+  "input_dir": "/home/wrobel/Dropbox/eti/papers/2025/DevEmo2/devemo",
+  "output_dir": "./dataset2",
+  "output_filename": "videos_annotations_devemo.json",
+  "acceptance_threshold": 0.2,
   "match_labels": false,
   "raw_annotations_only": false,
   "merged_annotations_only": true,
   "download_from_youtube": false,
   "max_fragment_size": 30,
-  "margin": 4,
-  "input_dir_loves": "/home/wrobel/DevEmo/loves"
+  "margin": 2,
+  "input_dir_loves": "/home/wrobel/Dropbox/eti/papers/2025/DevEmo2/devemo"
 }

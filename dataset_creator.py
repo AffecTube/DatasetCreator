@@ -347,8 +347,13 @@ def merge_videos_annotations(annotations):
     merged_videos_annotations = []
     for key, value in annotations.items():
         merged_annotations = merge_annotations(value)
+        merged_videos_annotations_with_margin = []
+        for annotation in merged_annotations:
+            annotation['startTime'] -= config['margin']
+            annotation['endTime'] += config['margin']
+            merged_videos_annotations_with_margin.append(annotation)
         merged_videos_annotations.append(
-            {'video_code': key, 'fragments_count': len(merged_annotations), 'annotations': merged_annotations})
+            {'video_code': key, 'fragments_count': len(merged_annotations), 'annotations': merged_videos_annotations_with_margin})
 
     return merged_videos_annotations
 
@@ -383,9 +388,10 @@ def generate_annotated_fragments(single_video_annotations):
 config = json_file_to_dict(config_filename)
 parse_options()
 
-raw_videos_annotations_orig = process_annotation_files()
-raw_videos_annotations_loves = process_annotation_files_loves()
-raw_videos_annotations = {**raw_videos_annotations_orig, **raw_videos_annotations_loves}
+# raw_videos_annotations_orig = process_annotation_files()
+# raw_videos_annotations_loves = process_annotation_files_loves()
+raw_videos_annotations = process_annotation_files_loves()
+# raw_videos_annotations = {**raw_videos_annotations_orig, **raw_videos_annotations_loves}
 if config['raw_annotations_only']:
     dict_to_json_file(raw_videos_annotations)
     exit(0)
