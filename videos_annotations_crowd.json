@@ -1,0 +1,1781 @@
+[
+    {
+        "video_code": "group28",
+        "fragments_count": 9,
+        "annotations": [
+            {
+                "startTime": 281.132,
+                "endTime": 320.119,
+                "labels": [
+                    "anger",
+                    "confusion",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g28_197893",
+                    "g28_198114",
+                    "g28_197738",
+                    "g28_198323",
+                    "g28_201095",
+                    "g28_198329",
+                    "g28_198371"
+                ]
+            },
+            {
+                "startTime": 354.455,
+                "endTime": 384.321,
+                "labels": [
+                    "anger",
+                    "surprise",
+                    "confusion",
+                    "sadness"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g28_197893",
+                    "g28_198114",
+                    "g28_198323",
+                    "g28_201095",
+                    "g28_198329",
+                    "g28_198371",
+                    "g28_198274"
+                ]
+            },
+            {
+                "startTime": 455.994,
+                "endTime": 478.769,
+                "labels": [
+                    "confusion",
+                    "sadness",
+                    "happiness",
+                    "disgust"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g28_197893",
+                    "g28_198114",
+                    "g28_197738",
+                    "g28_198323",
+                    "g28_197678",
+                    "g28_198329",
+                    "g28_198371"
+                ]
+            },
+            {
+                "startTime": 478.783,
+                "endTime": 551.316,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g28_197893",
+                    "g28_198114",
+                    "g28_197738",
+                    "g28_198323",
+                    "g28_201095",
+                    "g28_197678",
+                    "g28_198329",
+                    "g28_198274",
+                    "g28_198371"
+                ]
+            },
+            {
+                "startTime": 682.037,
+                "endTime": 707.667,
+                "labels": [
+                    "happiness",
+                    "surprise"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g28_197893",
+                    "g28_198114",
+                    "g28_197738",
+                    "g28_201095",
+                    "g28_197678",
+                    "g28_198329",
+                    "g28_198371",
+                    "g28_198274"
+                ]
+            },
+            {
+                "startTime": 813.317,
+                "endTime": 825.606,
+                "labels": [
+                    "anger",
+                    "happiness",
+                    "surprise",
+                    "disgust"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g28_197893",
+                    "g28_198114",
+                    "g28_197738",
+                    "g28_198323",
+                    "g28_197678",
+                    "g28_198329",
+                    "g28_198371"
+                ]
+            },
+            {
+                "startTime": 826.21,
+                "endTime": 905.736,
+                "labels": [
+                    "confusion",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g28_197893",
+                    "g28_198114",
+                    "g28_197738",
+                    "g28_198323",
+                    "g28_201095",
+                    "g28_197678",
+                    "g28_198329",
+                    "g28_198371",
+                    "g28_198274"
+                ]
+            },
+            {
+                "startTime": 1085.994,
+                "endTime": 1122.016,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g28_197893",
+                    "g28_198114",
+                    "g28_197738",
+                    "g28_198323",
+                    "g28_201095",
+                    "g28_197678",
+                    "g28_198371"
+                ]
+            },
+            {
+                "startTime": 1272.188,
+                "endTime": 1309.742,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "surprise"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g28_197893",
+                    "g28_198114",
+                    "g28_197738",
+                    "g28_198323",
+                    "g28_201095",
+                    "g28_197678",
+                    "g28_198371",
+                    "g28_198274"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group21",
+        "fragments_count": 8,
+        "annotations": [
+            {
+                "startTime": 0.0,
+                "endTime": 15.389,
+                "labels": [
+                    "sadness",
+                    "happiness",
+                    "confusion",
+                    "disgust"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g21_198297",
+                    "g21_197995",
+                    "g21_198013",
+                    "g21_198023",
+                    "g21_198375",
+                    "g21_198007",
+                    "g21_198016",
+                    "g21_197714"
+                ]
+            },
+            {
+                "startTime": 17.198,
+                "endTime": 27.554,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "surprise"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g21_198297",
+                    "g21_197995",
+                    "g21_198013",
+                    "g21_198375",
+                    "g21_198007",
+                    "g21_198016",
+                    "g21_197714",
+                    "g21_193475"
+                ]
+            },
+            {
+                "startTime": 188.2,
+                "endTime": 204.354,
+                "labels": [
+                    "confusion",
+                    "sadness"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g21_198297",
+                    "g21_197995",
+                    "g21_198013",
+                    "g21_198023",
+                    "g21_198007",
+                    "g21_198375",
+                    "g21_198016",
+                    "g21_197714",
+                    "g21_193475"
+                ]
+            },
+            {
+                "startTime": 266.489,
+                "endTime": 340.347,
+                "labels": [
+                    "anger",
+                    "confusion",
+                    "fear",
+                    "disgust",
+                    "sadness"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g21_197995",
+                    "g21_198013",
+                    "g21_198023",
+                    "g21_198375",
+                    "g21_198007",
+                    "g21_198016",
+                    "g21_197714",
+                    "g21_193475"
+                ]
+            },
+            {
+                "startTime": 388.459,
+                "endTime": 422.014,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 10,
+                "annotators": [
+                    "g21_198297",
+                    "g21_198016",
+                    "g21_197995",
+                    "g21_198013",
+                    "g21_198023",
+                    "g21_198375",
+                    "g21_198007",
+                    "g21_197901",
+                    "g21_197714",
+                    "g21_193475"
+                ]
+            },
+            {
+                "startTime": 441.223,
+                "endTime": 470.114,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "surprise"
+                ],
+                "annotators_count": 10,
+                "annotators": [
+                    "g21_197901",
+                    "g21_198297",
+                    "g21_197995",
+                    "g21_198013",
+                    "g21_198023",
+                    "g21_198007",
+                    "g21_198375",
+                    "g21_198016",
+                    "g21_197714",
+                    "g21_193475"
+                ]
+            },
+            {
+                "startTime": 734.134,
+                "endTime": 748.988,
+                "labels": [
+                    "confusion",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g21_198297",
+                    "g21_197995",
+                    "g21_198013",
+                    "g21_198023",
+                    "g21_198375",
+                    "g21_198016",
+                    "g21_193475"
+                ]
+            },
+            {
+                "startTime": 814.587,
+                "endTime": 947.596,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g21_198297",
+                    "g21_197995",
+                    "g21_198013",
+                    "g21_198023",
+                    "g21_198007",
+                    "g21_198375",
+                    "g21_198016",
+                    "g21_197714",
+                    "g21_193475"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group26",
+        "fragments_count": 1,
+        "annotations": [
+            {
+                "startTime": 0.0,
+                "endTime": 1315.059,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g26_198051",
+                    "g26_197953",
+                    "g26_197769",
+                    "g26_197637",
+                    "g26_197865",
+                    "g26_198246",
+                    "g26_198309",
+                    "g26_198386",
+                    "g26_198220"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group27",
+        "fragments_count": 4,
+        "annotations": [
+            {
+                "startTime": 28.17,
+                "endTime": 91.985,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "fear",
+                    "disgust",
+                    "surprise"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g27_197982",
+                    "g27_197922",
+                    "g27_198254",
+                    "g27_198209",
+                    "g27_198225",
+                    "g27_197859",
+                    "g27_197755",
+                    "g27_197887",
+                    "g27_197711"
+                ]
+            },
+            {
+                "startTime": 222.485,
+                "endTime": 256.746,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g27_197982",
+                    "g27_197922",
+                    "g27_198254",
+                    "g27_198209",
+                    "g27_198225",
+                    "g27_197859",
+                    "g27_197755"
+                ]
+            },
+            {
+                "startTime": 701.267,
+                "endTime": 724.925,
+                "labels": [
+                    "sadness",
+                    "surprise",
+                    "confusion",
+                    "disgust"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g27_197982",
+                    "g27_197922",
+                    "g27_198254",
+                    "g27_198209",
+                    "g27_198225",
+                    "g27_197859",
+                    "g27_197755",
+                    "g27_197977",
+                    "g27_197711"
+                ]
+            },
+            {
+                "startTime": 725.014,
+                "endTime": 766.175,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "surprise"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g27_197982",
+                    "g27_197922",
+                    "g27_198254",
+                    "g27_198209",
+                    "g27_198225",
+                    "g27_197859",
+                    "g27_197755",
+                    "g27_197711"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group30",
+        "fragments_count": 1,
+        "annotations": [
+            {
+                "startTime": 0.0,
+                "endTime": 1237.718,
+                "labels": [
+                    "anger",
+                    "confusion",
+                    "happiness",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g30_197832",
+                    "g30_197836",
+                    "g30_197856",
+                    "g30_197815",
+                    "g30_198221",
+                    "g30_197739",
+                    "g30_198302",
+                    "g30_197741",
+                    "g30_197633"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group25",
+        "fragments_count": 7,
+        "annotations": [
+            {
+                "startTime": 0.0,
+                "endTime": 48.212,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "surprise",
+                    "sadness"
+                ],
+                "annotators_count": 11,
+                "annotators": [
+                    "g25_197749",
+                    "g25_198015",
+                    "g25_197747",
+                    "g25_197891",
+                    "g25_198203",
+                    "g25_198068",
+                    "g25_198080",
+                    "g25_198300",
+                    "g25_198265",
+                    "g25_201302",
+                    "g25_186531"
+                ]
+            },
+            {
+                "startTime": 117.679,
+                "endTime": 138.309,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "fear",
+                    "disgust",
+                    "surprise"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g25_198015",
+                    "g25_197747",
+                    "g25_197891",
+                    "g25_198203",
+                    "g25_201302",
+                    "g25_198068",
+                    "g25_186531",
+                    "g25_198265",
+                    "g25_197749"
+                ]
+            },
+            {
+                "startTime": 140.243,
+                "endTime": 199.631,
+                "labels": [
+                    "sadness",
+                    "surprise",
+                    "fear",
+                    "confusion"
+                ],
+                "annotators_count": 10,
+                "annotators": [
+                    "g25_198015",
+                    "g25_197747",
+                    "g25_197891",
+                    "g25_198203",
+                    "g25_201302",
+                    "g25_198068",
+                    "g25_186531",
+                    "g25_198300",
+                    "g25_198265",
+                    "g25_197749"
+                ]
+            },
+            {
+                "startTime": 269.051,
+                "endTime": 279.654,
+                "labels": [
+                    "confusion",
+                    "surprise",
+                    "fear"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g25_197749",
+                    "g25_198015",
+                    "g25_197747",
+                    "g25_197891",
+                    "g25_198203",
+                    "g25_198068",
+                    "g25_186531",
+                    "g25_201302"
+                ]
+            },
+            {
+                "startTime": 577.302,
+                "endTime": 629.994,
+                "labels": [
+                    "anger",
+                    "confusion",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g25_197749",
+                    "g25_198015",
+                    "g25_197747",
+                    "g25_197891",
+                    "g25_198068",
+                    "g25_186531",
+                    "g25_198300",
+                    "g25_198265",
+                    "g25_201302"
+                ]
+            },
+            {
+                "startTime": 788.086,
+                "endTime": 814.338,
+                "labels": [
+                    "sadness",
+                    "surprise",
+                    "fear",
+                    "confusion"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g25_198015",
+                    "g25_197747",
+                    "g25_197891",
+                    "g25_198203",
+                    "g25_198068",
+                    "g25_201302",
+                    "g25_186531",
+                    "g25_198265",
+                    "g25_197749"
+                ]
+            },
+            {
+                "startTime": 1254.959,
+                "endTime": 1289.343,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g25_197749",
+                    "g25_198080",
+                    "g25_198015",
+                    "g25_197747",
+                    "g25_198068",
+                    "g25_186531",
+                    "g25_198300",
+                    "g25_201302"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group23",
+        "fragments_count": 1,
+        "annotations": [
+            {
+                "startTime": 0.0,
+                "endTime": 1365.752,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 11,
+                "annotators": [
+                    "g23_201295",
+                    "g23_201627",
+                    "g23_198143",
+                    "g23_197736",
+                    "g23_197813",
+                    "g23_198199",
+                    "g23_197593",
+                    "g23_197677",
+                    "g23_198097",
+                    "g23_197652",
+                    "g23_198226"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group32",
+        "fragments_count": 1,
+        "annotations": [
+            {
+                "startTime": 0.0,
+                "endTime": 1287.116,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 12,
+                "annotators": [
+                    "g32_198363",
+                    "g32_198257",
+                    "g32_198349",
+                    "g32_197615",
+                    "g32_197845",
+                    "g32_197860",
+                    "g32_197883",
+                    "g32_198058",
+                    "g32_198251",
+                    "g32_197591",
+                    "g32_197662",
+                    "g32_197606"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group17",
+        "fragments_count": 9,
+        "annotations": [
+            {
+                "startTime": 0.0,
+                "endTime": 65.176,
+                "labels": [
+                    "anger",
+                    "confusion",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g17_197912",
+                    "g17_198099",
+                    "g17_192953",
+                    "g17_198360",
+                    "g17_197801",
+                    "g17_197844",
+                    "g17_198036"
+                ]
+            },
+            {
+                "startTime": 157.239,
+                "endTime": 266.298,
+                "labels": [
+                    "anger",
+                    "confusion",
+                    "happiness",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 10,
+                "annotators": [
+                    "g17_197912",
+                    "g17_198099",
+                    "g17_198036",
+                    "g17_197801",
+                    "g17_198360",
+                    "g17_192953",
+                    "g17_197844",
+                    "g17_197695",
+                    "g17_198071",
+                    "g17_192914"
+                ]
+            },
+            {
+                "startTime": 269.951,
+                "endTime": 361.567,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "surprise",
+                    "fear"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g17_197912",
+                    "g17_198099",
+                    "g17_192953",
+                    "g17_198360",
+                    "g17_197844",
+                    "g17_197695",
+                    "g17_192914"
+                ]
+            },
+            {
+                "startTime": 365.388,
+                "endTime": 450.174,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 10,
+                "annotators": [
+                    "g17_197695",
+                    "g17_197912",
+                    "g17_198099",
+                    "g17_198360",
+                    "g17_192953",
+                    "g17_197801",
+                    "g17_197844",
+                    "g17_198036",
+                    "g17_198071",
+                    "g17_192914"
+                ]
+            },
+            {
+                "startTime": 460.826,
+                "endTime": 523.116,
+                "labels": [
+                    "confusion",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g17_197912",
+                    "g17_198099",
+                    "g17_198036",
+                    "g17_197844",
+                    "g17_197695",
+                    "g17_198071",
+                    "g17_192914"
+                ]
+            },
+            {
+                "startTime": 633.248,
+                "endTime": 762.065,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g17_197912",
+                    "g17_198099",
+                    "g17_198036",
+                    "g17_192953",
+                    "g17_198360",
+                    "g17_197844",
+                    "g17_197695",
+                    "g17_198071"
+                ]
+            },
+            {
+                "startTime": 1151.513,
+                "endTime": 1258.666,
+                "labels": [
+                    "sadness",
+                    "surprise",
+                    "fear",
+                    "confusion"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g17_197912",
+                    "g17_198099",
+                    "g17_198360",
+                    "g17_192953",
+                    "g17_197844",
+                    "g17_197695",
+                    "g17_198071"
+                ]
+            },
+            {
+                "startTime": 1259.067,
+                "endTime": 1315.411,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "disgust",
+                    "surprise"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g17_197912",
+                    "g17_198099",
+                    "g17_198360",
+                    "g17_192953",
+                    "g17_197844",
+                    "g17_197695",
+                    "g17_192914"
+                ]
+            },
+            {
+                "startTime": 1336.806,
+                "endTime": 1374.259,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "surprise"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g17_197912",
+                    "g17_198099",
+                    "g17_198360",
+                    "g17_197844",
+                    "g17_197695",
+                    "g17_198071",
+                    "g17_192914"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group31",
+        "fragments_count": 5,
+        "annotations": [
+            {
+                "startTime": 74.227,
+                "endTime": 120.1,
+                "labels": [
+                    "sadness",
+                    "happiness",
+                    "confusion",
+                    "disgust"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g31_197607",
+                    "g31_197796",
+                    "g31_197983",
+                    "g31_197943",
+                    "g31_193042",
+                    "g31_194103",
+                    "g31_198134",
+                    "g31_198325",
+                    "g31_198111"
+                ]
+            },
+            {
+                "startTime": 457.889,
+                "endTime": 468.011,
+                "labels": [
+                    "sadness",
+                    "happiness",
+                    "surprise"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g31_197607",
+                    "g31_197796",
+                    "g31_197983",
+                    "g31_197943",
+                    "g31_194103",
+                    "g31_198134",
+                    "g31_198325",
+                    "g31_198111"
+                ]
+            },
+            {
+                "startTime": 720.262,
+                "endTime": 795.415,
+                "labels": [
+                    "anger",
+                    "confusion",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g31_197607",
+                    "g31_197796",
+                    "g31_197983",
+                    "g31_197943",
+                    "g31_193042",
+                    "g31_198325",
+                    "g31_198111"
+                ]
+            },
+            {
+                "startTime": 925.517,
+                "endTime": 936.712,
+                "labels": [
+                    "confusion",
+                    "surprise",
+                    "disgust"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g31_197607",
+                    "g31_197983",
+                    "g31_197943",
+                    "g31_193042",
+                    "g31_194103",
+                    "g31_198134",
+                    "g31_198111"
+                ]
+            },
+            {
+                "startTime": 1190.78,
+                "endTime": 1211.471,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g31_197607",
+                    "g31_197796",
+                    "g31_197983",
+                    "g31_197943",
+                    "g31_194103",
+                    "g31_198134",
+                    "g31_198325",
+                    "g31_198111"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group24",
+        "fragments_count": 5,
+        "annotations": [
+            {
+                "startTime": 0.0,
+                "endTime": 45.738,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "disgust"
+                ],
+                "annotators_count": 6,
+                "annotators": [
+                    "g24_197917",
+                    "g24_197694",
+                    "g24_198357",
+                    "g24_197810",
+                    "g24_197753",
+                    "g24_198000"
+                ]
+            },
+            {
+                "startTime": 176.782,
+                "endTime": 214.021,
+                "labels": [
+                    "confusion",
+                    "surprise"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g24_197694",
+                    "g24_198357",
+                    "g24_197810",
+                    "g24_197753",
+                    "g24_198000"
+                ]
+            },
+            {
+                "startTime": 486.049,
+                "endTime": 506.896,
+                "labels": [
+                    "sadness",
+                    "disgust"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g24_197917",
+                    "g24_197694",
+                    "g24_198357",
+                    "g24_197810",
+                    "g24_197753"
+                ]
+            },
+            {
+                "startTime": 763.226,
+                "endTime": 783.272,
+                "labels": [
+                    "sadness",
+                    "happiness",
+                    "confusion"
+                ],
+                "annotators_count": 6,
+                "annotators": [
+                    "g24_197917",
+                    "g24_197694",
+                    "g24_198357",
+                    "g24_197810",
+                    "g24_197753",
+                    "g24_198000"
+                ]
+            },
+            {
+                "startTime": 1020.049,
+                "endTime": 1065.732,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "fear",
+                    "disgust"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g24_197917",
+                    "g24_197694",
+                    "g24_198357",
+                    "g24_197810",
+                    "g24_197753"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group18",
+        "fragments_count": 1,
+        "annotations": [
+            {
+                "startTime": 0.0,
+                "endTime": 1225.903,
+                "labels": [
+                    "anger",
+                    "confusion",
+                    "happiness",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 10,
+                "annotators": [
+                    "g18_197580",
+                    "g18_197805",
+                    "g18_198256",
+                    "g18_198082",
+                    "g18_197839",
+                    "g18_197849",
+                    "g18_197727",
+                    "g18_197965",
+                    "g18_198262",
+                    "g18_197574"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group22",
+        "fragments_count": 1,
+        "annotations": [
+            {
+                "startTime": 0.0,
+                "endTime": 1225.276,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g22_193317",
+                    "g22_197636",
+                    "g22_197700",
+                    "g22_197719",
+                    "g22_197920",
+                    "g22_197577",
+                    "g22_198286",
+                    "g22_198326",
+                    "g22_197993"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group19",
+        "fragments_count": 9,
+        "annotations": [
+            {
+                "startTime": 37.695,
+                "endTime": 74.054,
+                "labels": [
+                    "sadness",
+                    "surprise",
+                    "confusion"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g19_197949",
+                    "g19_198033",
+                    "g19_197629",
+                    "g19_197648",
+                    "g19_197877",
+                    "g19_197907",
+                    "g19_197704"
+                ]
+            },
+            {
+                "startTime": 89.06,
+                "endTime": 159.199,
+                "labels": [
+                    "anger",
+                    "confusion",
+                    "fear",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g19_198152",
+                    "g19_197949",
+                    "g19_198033",
+                    "g19_197629",
+                    "g19_197648",
+                    "g19_197907",
+                    "g19_197704"
+                ]
+            },
+            {
+                "startTime": 200.187,
+                "endTime": 233.97,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "fear",
+                    "disgust",
+                    "surprise"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g19_198152",
+                    "g19_197949",
+                    "g19_197629",
+                    "g19_198033",
+                    "g19_197877",
+                    "g19_198303",
+                    "g19_201096",
+                    "g19_197704"
+                ]
+            },
+            {
+                "startTime": 238.265,
+                "endTime": 319.793,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g19_198152",
+                    "g19_197949",
+                    "g19_197629",
+                    "g19_198033",
+                    "g19_197648",
+                    "g19_197877",
+                    "g19_198303",
+                    "g19_197907",
+                    "g19_201096"
+                ]
+            },
+            {
+                "startTime": 321.482,
+                "endTime": 374.149,
+                "labels": [
+                    "anger",
+                    "confusion",
+                    "fear",
+                    "disgust",
+                    "sadness"
+                ],
+                "annotators_count": 10,
+                "annotators": [
+                    "g19_198152",
+                    "g19_197949",
+                    "g19_197629",
+                    "g19_198033",
+                    "g19_197648",
+                    "g19_197877",
+                    "g19_198303",
+                    "g19_197907",
+                    "g19_201096",
+                    "g19_197704"
+                ]
+            },
+            {
+                "startTime": 403.59,
+                "endTime": 521.876,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 9,
+                "annotators": [
+                    "g19_198152",
+                    "g19_197949",
+                    "g19_197629",
+                    "g19_198033",
+                    "g19_197648",
+                    "g19_197877",
+                    "g19_198303",
+                    "g19_197907",
+                    "g19_197704"
+                ]
+            },
+            {
+                "startTime": 627.181,
+                "endTime": 673.006,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "fear",
+                    "surprise"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g19_197949",
+                    "g19_197629",
+                    "g19_198033",
+                    "g19_197648",
+                    "g19_198303",
+                    "g19_197907",
+                    "g19_197704"
+                ]
+            },
+            {
+                "startTime": 916.516,
+                "endTime": 925.993,
+                "labels": [
+                    "anger",
+                    "confusion",
+                    "happiness",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 8,
+                "annotators": [
+                    "g19_198152",
+                    "g19_197949",
+                    "g19_198033",
+                    "g19_197629",
+                    "g19_197648",
+                    "g19_198303",
+                    "g19_197907",
+                    "g19_197704"
+                ]
+            },
+            {
+                "startTime": 994.714,
+                "endTime": 1008.924,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "happiness",
+                    "fear",
+                    "sadness"
+                ],
+                "annotators_count": 10,
+                "annotators": [
+                    "g19_198152",
+                    "g19_197949",
+                    "g19_198033",
+                    "g19_197629",
+                    "g19_197648",
+                    "g19_197877",
+                    "g19_198303",
+                    "g19_197907",
+                    "g19_201096",
+                    "g19_197704"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group20",
+        "fragments_count": 12,
+        "annotations": [
+            {
+                "startTime": 1.946,
+                "endTime": 54.774,
+                "labels": [
+                    "confusion",
+                    "fear",
+                    "disgust",
+                    "sadness",
+                    "surprise"
+                ],
+                "annotators_count": 6,
+                "annotators": [
+                    "g20_197703",
+                    "g20_197884",
+                    "g20_194319",
+                    "g20_201316",
+                    "g20_197966",
+                    "g20_197624"
+                ]
+            },
+            {
+                "startTime": 205.692,
+                "endTime": 228.414,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "surprise",
+                    "disgust"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g20_197703",
+                    "g20_197884",
+                    "g20_194319",
+                    "g20_201316",
+                    "g20_197966",
+                    "g20_197624",
+                    "g20_198020"
+                ]
+            },
+            {
+                "startTime": 234.323,
+                "endTime": 264.012,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "disgust"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g20_197884",
+                    "g20_197703",
+                    "g20_194319",
+                    "g20_201316",
+                    "g20_197624"
+                ]
+            },
+            {
+                "startTime": 264.943,
+                "endTime": 306.479,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "surprise",
+                    "disgust"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g20_197884",
+                    "g20_197703",
+                    "g20_194319",
+                    "g20_197966",
+                    "g20_197624"
+                ]
+            },
+            {
+                "startTime": 311.77,
+                "endTime": 324.19,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "surprise",
+                    "disgust"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g20_197884",
+                    "g20_194319",
+                    "g20_201316",
+                    "g20_197966",
+                    "g20_198020"
+                ]
+            },
+            {
+                "startTime": 570.592,
+                "endTime": 603.302,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "surprise",
+                    "disgust"
+                ],
+                "annotators_count": 6,
+                "annotators": [
+                    "g20_197703",
+                    "g20_197884",
+                    "g20_194319",
+                    "g20_201316",
+                    "g20_197966",
+                    "g20_198020"
+                ]
+            },
+            {
+                "startTime": 911.053,
+                "endTime": 935.798,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "disgust"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g20_197884",
+                    "g20_194319",
+                    "g20_201316",
+                    "g20_197966",
+                    "g20_197624"
+                ]
+            },
+            {
+                "startTime": 970.114,
+                "endTime": 986.868,
+                "labels": [
+                    "sadness",
+                    "fear",
+                    "disgust"
+                ],
+                "annotators_count": 6,
+                "annotators": [
+                    "g20_197703",
+                    "g20_197884",
+                    "g20_194319",
+                    "g20_197966",
+                    "g20_197624",
+                    "g20_198020"
+                ]
+            },
+            {
+                "startTime": 1003.595,
+                "endTime": 1049.078,
+                "labels": [
+                    "sadness",
+                    "surprise",
+                    "confusion"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g20_197884",
+                    "g20_197703",
+                    "g20_201316",
+                    "g20_197966",
+                    "g20_197624"
+                ]
+            },
+            {
+                "startTime": 1078.04,
+                "endTime": 1093.497,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "surprise",
+                    "disgust"
+                ],
+                "annotators_count": 6,
+                "annotators": [
+                    "g20_197703",
+                    "g20_197884",
+                    "g20_201316",
+                    "g20_197966",
+                    "g20_197624",
+                    "g20_198020"
+                ]
+            },
+            {
+                "startTime": 1154.557,
+                "endTime": 1169.71,
+                "labels": [
+                    "sadness",
+                    "surprise",
+                    "fear",
+                    "confusion"
+                ],
+                "annotators_count": 7,
+                "annotators": [
+                    "g20_197703",
+                    "g20_197884",
+                    "g20_194319",
+                    "g20_201316",
+                    "g20_197966",
+                    "g20_197624",
+                    "g20_198020"
+                ]
+            },
+            {
+                "startTime": 1251.211,
+                "endTime": 1260.699,
+                "labels": [
+                    "confusion",
+                    "surprise",
+                    "disgust"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g20_197703",
+                    "g20_194319",
+                    "g20_201316",
+                    "g20_197966",
+                    "g20_198020"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "group29",
+        "fragments_count": 6,
+        "annotations": [
+            {
+                "startTime": 362.298,
+                "endTime": 407.071,
+                "labels": [
+                    "sadness",
+                    "confusion",
+                    "disgust"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g29_197787",
+                    "g29_197913",
+                    "g29_198290",
+                    "g29_198417",
+                    "g29_197776"
+                ]
+            },
+            {
+                "startTime": 541.036,
+                "endTime": 569.88,
+                "labels": [
+                    "confusion",
+                    "sadness"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g29_197787",
+                    "g29_197913",
+                    "g29_198290",
+                    "g29_198417",
+                    "g29_197776"
+                ]
+            },
+            {
+                "startTime": 657.377,
+                "endTime": 681.49,
+                "labels": [
+                    "anger",
+                    "fear"
+                ],
+                "annotators_count": 6,
+                "annotators": [
+                    "g29_197787",
+                    "g29_197672",
+                    "g29_197913",
+                    "g29_198290",
+                    "g29_198417",
+                    "g29_197776"
+                ]
+            },
+            {
+                "startTime": 745.541,
+                "endTime": 758.984,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "fear",
+                    "disgust",
+                    "surprise"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g29_197787",
+                    "g29_197913",
+                    "g29_198290",
+                    "g29_198417",
+                    "g29_197776"
+                ]
+            },
+            {
+                "startTime": 777.853,
+                "endTime": 791.137,
+                "labels": [
+                    "confusion",
+                    "happiness",
+                    "fear"
+                ],
+                "annotators_count": 6,
+                "annotators": [
+                    "g29_197787",
+                    "g29_197672",
+                    "g29_197913",
+                    "g29_198290",
+                    "g29_198417",
+                    "g29_197776"
+                ]
+            },
+            {
+                "startTime": 1197.855,
+                "endTime": 1210.398,
+                "labels": [
+                    "confusion",
+                    "anger",
+                    "disgust",
+                    "sadness"
+                ],
+                "annotators_count": 5,
+                "annotators": [
+                    "g29_197787",
+                    "g29_197913",
+                    "g29_198290",
+                    "g29_198417",
+                    "g29_197776"
+                ]
+            }
+        ]
+    }
+]

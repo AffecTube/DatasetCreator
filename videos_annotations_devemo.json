@@ -1,0 +1,3122 @@
+[
+    {
+        "video_code": "devemo1",
+        "fragments_count": 44,
+        "annotations": [
+            {
+                "startTime": 10.63,
+                "endTime": 15.882,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 26.309,
+                "endTime": 31.432,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 29.383,
+                "endTime": 35.785,
+                "labels": [
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 41.795,
+                "endTime": 50.276,
+                "labels": [
+                    "Fear"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 60.855,
+                "endTime": 71.007,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 86.984,
+                "endTime": 94.395,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 161.928,
+                "endTime": 182.204,
+                "labels": [
+                    "Anger",
+                    "Disgust",
+                    "Sadness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 196.254,
+                "endTime": 206.742,
+                "labels": [
+                    "Sadness",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 204.826,
+                "endTime": 215.844,
+                "labels": [
+                    "Disgust",
+                    "Sadness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 219.67,
+                "endTime": 228.567,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 257.758,
+                "endTime": 264.476,
+                "labels": [
+                    "Confusion",
+                    "Surprise",
+                    "Disgust"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 286.591,
+                "endTime": 301.155,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 302.214,
+                "endTime": 314.962,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 319.649,
+                "endTime": 331.593,
+                "labels": [
+                    "Anger",
+                    "Disgust"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 337.068,
+                "endTime": 343.503,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 355.438,
+                "endTime": 363.495,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 364.176,
+                "endTime": 374.019,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 407.463,
+                "endTime": 420.102,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 420.854,
+                "endTime": 432.2,
+                "labels": [
+                    "Fear"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 443.631,
+                "endTime": 456.016,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 468.081,
+                "endTime": 476.598,
+                "labels": [
+                    "Anger"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 524.906,
+                "endTime": 535.443,
+                "labels": [
+                    "Anger",
+                    "Disgust",
+                    "Sadness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 541.907,
+                "endTime": 548.292,
+                "labels": [
+                    "Sadness",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 555.693,
+                "endTime": 570.19,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 575.858,
+                "endTime": 587.464,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 595.983,
+                "endTime": 604.078,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 628.974,
+                "endTime": 635.371,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 641.303,
+                "endTime": 655.82,
+                "labels": [
+                    "Anger",
+                    "Happiness",
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 651.988,
+                "endTime": 667.566,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 693.568,
+                "endTime": 702.64,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 719.131,
+                "endTime": 725.094,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 731.73,
+                "endTime": 742.7,
+                "labels": [
+                    "Happiness",
+                    "Surprise",
+                    "Disgust",
+                    "Sadness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 744.933,
+                "endTime": 753.304,
+                "labels": [
+                    "Disgust",
+                    "Sadness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 756.716,
+                "endTime": 762.385,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 764.149,
+                "endTime": 777.631,
+                "labels": [
+                    "Sadness",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 778.156,
+                "endTime": 783.858,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 787.565,
+                "endTime": 794.983,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 802.987,
+                "endTime": 820.476,
+                "labels": [
+                    "Sadness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 820.619,
+                "endTime": 835.677,
+                "labels": [
+                    "Fear"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 847.988,
+                "endTime": 863.042,
+                "labels": [
+                    "Happiness",
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 873.114,
+                "endTime": 883.268,
+                "labels": [
+                    "Fear"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 883.815,
+                "endTime": 896.114,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 909.888,
+                "endTime": 916.728,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 924.074,
+                "endTime": 933.146,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "devemo5",
+        "fragments_count": 27,
+        "annotations": [
+            {
+                "startTime": 22.312,
+                "endTime": 31.634,
+                "labels": [
+                    "Happiness",
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 62.519999999999996,
+                "endTime": 70.423,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 98.373,
+                "endTime": 109.82,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 107.644,
+                "endTime": 117.612,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 128.847,
+                "endTime": 134.334,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 139.455,
+                "endTime": 148.869,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 173.366,
+                "endTime": 180.256,
+                "labels": [
+                    "Anger",
+                    "Disgust"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 183.074,
+                "endTime": 190.724,
+                "labels": [
+                    "Anger",
+                    "Disgust",
+                    "Sadness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 187.982,
+                "endTime": 195.384,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 242.09,
+                "endTime": 249.879,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 272.481,
+                "endTime": 284.271,
+                "labels": [
+                    "Surprise",
+                    "Disgust",
+                    "Sadness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 283.291,
+                "endTime": 291.863,
+                "labels": [
+                    "Anger",
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 301.695,
+                "endTime": 311.981,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 357.735,
+                "endTime": 369.344,
+                "labels": [
+                    "Anger",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 402.362,
+                "endTime": 409.864,
+                "labels": [
+                    "Surprise",
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 419.868,
+                "endTime": 425.764,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 422.868,
+                "endTime": 432.281,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 445.4,
+                "endTime": 455.512,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 508.226,
+                "endTime": 521.289,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 522.975,
+                "endTime": 530.833,
+                "labels": [
+                    "Sadness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 527.099,
+                "endTime": 534.084,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 540.434,
+                "endTime": 548.078,
+                "labels": [
+                    "Anger"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 581.714,
+                "endTime": 589.312,
+                "labels": [
+                    "Anger",
+                    "Disgust"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 630.894,
+                "endTime": 636.526,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 677.858,
+                "endTime": 689.826,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 708.7,
+                "endTime": 717.206,
+                "labels": [
+                    "Happiness",
+                    "Surprise"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 764.533,
+                "endTime": 774.302,
+                "labels": [
+                    "Anger"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "devemo3",
+        "fragments_count": 68,
+        "annotations": [
+            {
+                "startTime": 67.534,
+                "endTime": 80.699,
+                "labels": [
+                    "Happiness",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 84.752,
+                "endTime": 102.205,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 124.27,
+                "endTime": 132.587,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 130.949,
+                "endTime": 138.897,
+                "labels": [
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 155.206,
+                "endTime": 164.643,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 184.621,
+                "endTime": 192.356,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 205.359,
+                "endTime": 212.113,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 214.037,
+                "endTime": 223.353,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 221.407,
+                "endTime": 227.928,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 239.357,
+                "endTime": 247.528,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 249.318,
+                "endTime": 256.61400000000003,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 311.23,
+                "endTime": 320.873,
+                "labels": [
+                    "Fear"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 331.614,
+                "endTime": 342.461,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 371.978,
+                "endTime": 380.465,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 377.47,
+                "endTime": 385.353,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 404.29,
+                "endTime": 413.352,
+                "labels": [
+                    "Surprise",
+                    "Disgust"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 428.848,
+                "endTime": 436.482,
+                "labels": [
+                    "Happiness",
+                    "Disgust"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 444.564,
+                "endTime": 453.295,
+                "labels": [
+                    "Happiness",
+                    "Surprise"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 523.431,
+                "endTime": 533.05,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 538.178,
+                "endTime": 573.291,
+                "labels": [
+                    "Happiness",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 639.786,
+                "endTime": 651.914,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 656.977,
+                "endTime": 668.571,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 670.548,
+                "endTime": 678.954,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 694.069,
+                "endTime": 711.557,
+                "labels": [
+                    "Happiness",
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 710.617,
+                "endTime": 723.759,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 722.985,
+                "endTime": 732.863,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 761.766,
+                "endTime": 767.377,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 788.843,
+                "endTime": 820.441,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 829.661,
+                "endTime": 839.799,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 837.554,
+                "endTime": 844.591,
+                "labels": [
+                    "Anger",
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 853.589,
+                "endTime": 860.054,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 902.056,
+                "endTime": 909.979,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 906.808,
+                "endTime": 915.074,
+                "labels": [
+                    "Surprise",
+                    "Disgust"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 912.939,
+                "endTime": 919.172,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 937.749,
+                "endTime": 947.01,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 964.031,
+                "endTime": 971.489,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 967.88,
+                "endTime": 974.737,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 991.269,
+                "endTime": 999.418,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 1003.298,
+                "endTime": 1010.74,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1009.924,
+                "endTime": 1021.105,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1030.739,
+                "endTime": 1045.165,
+                "labels": [
+                    "Sadness",
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1058.658,
+                "endTime": 1065.446,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 1095.563,
+                "endTime": 1105.401,
+                "labels": [
+                    "Happiness",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1109.093,
+                "endTime": 1118.668,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1177.56,
+                "endTime": 1190.355,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1186.434,
+                "endTime": 1194.644,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1218.106,
+                "endTime": 1227.296,
+                "labels": [
+                    "Happiness",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1228.939,
+                "endTime": 1236.523,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1254.045,
+                "endTime": 1260.686,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 1287.51,
+                "endTime": 1294.647,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 1295.16,
+                "endTime": 1301.982,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1298.807,
+                "endTime": 1309.965,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 1322.39,
+                "endTime": 1332.183,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1334.84,
+                "endTime": 1347.341,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1390.852,
+                "endTime": 1400.234,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 1410.639,
+                "endTime": 1418.37,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1422.192,
+                "endTime": 1433.128,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1433.086,
+                "endTime": 1439.361,
+                "labels": [
+                    "Anger"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1459.198,
+                "endTime": 1470.013,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1480.714,
+                "endTime": 1491.197,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1493.738,
+                "endTime": 1499.302,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 1521.112,
+                "endTime": 1527.841,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 1524.681,
+                "endTime": 1532.754,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 1561.984,
+                "endTime": 1567.472,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 1608.802,
+                "endTime": 1614.094,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 1750.779,
+                "endTime": 1761.706,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1763.216,
+                "endTime": 1780.118,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1821.302,
+                "endTime": 1829.584,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "devemo4",
+        "fragments_count": 52,
+        "annotations": [
+            {
+                "startTime": 5.34,
+                "endTime": 17.167,
+                "labels": [
+                    "Confusion",
+                    "Surprise",
+                    "Disgust"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 15.239999999999998,
+                "endTime": 24.227,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 27.805,
+                "endTime": 33.361000000000004,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 30.836,
+                "endTime": 36.584,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 34.342,
+                "endTime": 41.878,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 63.075,
+                "endTime": 73.523,
+                "labels": [
+                    "Fear",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 78.148,
+                "endTime": 88.969,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 123.08,
+                "endTime": 131.506,
+                "labels": [
+                    "Anger",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 144.459,
+                "endTime": 151.221,
+                "labels": [
+                    "Fear",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 186.24,
+                "endTime": 195.627,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 198.02,
+                "endTime": 203.793,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 209.932,
+                "endTime": 219.166,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 218.423,
+                "endTime": 228.267,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 232.335,
+                "endTime": 238.596,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 255.363,
+                "endTime": 266.872,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 268.49,
+                "endTime": 279.456,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 279.581,
+                "endTime": 285.213,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 298.924,
+                "endTime": 314.886,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 335.178,
+                "endTime": 346.428,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 369.109,
+                "endTime": 382.489,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 382.391,
+                "endTime": 388.476,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 394.096,
+                "endTime": 401.084,
+                "labels": [
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 448.605,
+                "endTime": 467.055,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 464.824,
+                "endTime": 471.1,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 469.49,
+                "endTime": 475.122,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 474.62,
+                "endTime": 482.543,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 495.798,
+                "endTime": 501.405,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 532.582,
+                "endTime": 539.559,
+                "labels": [
+                    "Sadness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 551.711,
+                "endTime": 560.482,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 557.164,
+                "endTime": 565.469,
+                "labels": [
+                    "Anger"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 586.594,
+                "endTime": 593.862,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 598.447,
+                "endTime": 610.812,
+                "labels": [
+                    "Sadness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 671.992,
+                "endTime": 682.337,
+                "labels": [
+                    "Happiness",
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 703.701,
+                "endTime": 711.073,
+                "labels": [
+                    "Anger"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 743.427,
+                "endTime": 751.023,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 747.041,
+                "endTime": 759.613,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 764.961,
+                "endTime": 771.516,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 784.229,
+                "endTime": 795.165,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 802.98,
+                "endTime": 812.472,
+                "labels": [
+                    "Anger"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 810.923,
+                "endTime": 817.312,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 816.492,
+                "endTime": 825.917,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 833.44,
+                "endTime": 845.571,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 852.653,
+                "endTime": 869.054,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 884.431,
+                "endTime": 897.031,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 902.578,
+                "endTime": 915.922,
+                "labels": [
+                    "Confusion",
+                    "Sadness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 917.181,
+                "endTime": 928.18,
+                "labels": [
+                    "Anger"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 929.903,
+                "endTime": 935.647,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 933.721,
+                "endTime": 942.89,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 964.128,
+                "endTime": 975.195,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 973.032,
+                "endTime": 991.249,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 991.925,
+                "endTime": 999.313,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 998.749,
+                "endTime": 1007.278,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            }
+        ]
+    },
+    {
+        "video_code": "devemo2",
+        "fragments_count": 59,
+        "annotations": [
+            {
+                "startTime": 22.772,
+                "endTime": 29.081,
+                "labels": [
+                    "Anger"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 29.414,
+                "endTime": 40.081,
+                "labels": [
+                    "Anger",
+                    "Disgust"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 39.812,
+                "endTime": 51.25,
+                "labels": [
+                    "Sadness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 106.041,
+                "endTime": 122.452,
+                "labels": [
+                    "Sadness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 123.541,
+                "endTime": 134.21,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 242.747,
+                "endTime": 253.624,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 295.142,
+                "endTime": 304.942,
+                "labels": [
+                    "Fear"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 314.362,
+                "endTime": 322.674,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 378.397,
+                "endTime": 386.684,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 410.989,
+                "endTime": 417.733,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 421.87,
+                "endTime": 433.213,
+                "labels": [
+                    "Anger",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 447.3,
+                "endTime": 456.931,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 457.509,
+                "endTime": 468.528,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 534.194,
+                "endTime": 541.906,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 576.22,
+                "endTime": 584.205,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 648.488,
+                "endTime": 657.584,
+                "labels": [
+                    "Surprise",
+                    "Disgust"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 685.816,
+                "endTime": 695.916,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 748.525,
+                "endTime": 756.0,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 780.102,
+                "endTime": 787.109,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 785.955,
+                "endTime": 794.528,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 808.325,
+                "endTime": 814.571,
+                "labels": [
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 839.777,
+                "endTime": 845.667,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 843.275,
+                "endTime": 860.098,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 874.674,
+                "endTime": 885.152,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 888.271,
+                "endTime": 893.386,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 941.707,
+                "endTime": 947.172,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 965.659,
+                "endTime": 980.847,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 980.151,
+                "endTime": 987.517,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 988.904,
+                "endTime": 1003.226,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1041.29,
+                "endTime": 1047.125,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 1052.155,
+                "endTime": 1060.959,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1065.939,
+                "endTime": 1072.878,
+                "labels": [
+                    "Surprise",
+                    "Disgust"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1076.497,
+                "endTime": 1084.327,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 1095.791,
+                "endTime": 1104.944,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1105.803,
+                "endTime": 1115.279,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1115.367,
+                "endTime": 1126.724,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1151.2,
+                "endTime": 1164.221,
+                "labels": [
+                    "Happiness",
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1167.59,
+                "endTime": 1178.033,
+                "labels": [
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1194.372,
+                "endTime": 1208.481,
+                "labels": [
+                    "Happiness",
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1216.246,
+                "endTime": 1227.286,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1223.458,
+                "endTime": 1236.041,
+                "labels": [
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1278.063,
+                "endTime": 1284.349,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 1291.634,
+                "endTime": 1297.126,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "duygun"
+                ]
+            },
+            {
+                "startTime": 1296.787,
+                "endTime": 1309.047,
+                "labels": [
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1324.626,
+                "endTime": 1331.392,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 1347.746,
+                "endTime": 1354.48,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 1357.736,
+                "endTime": 1369.226,
+                "labels": [
+                    "Happiness",
+                    "Disgust",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1385.311,
+                "endTime": 1401.757,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1415.169,
+                "endTime": 1421.542,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1423.55,
+                "endTime": 1436.35,
+                "labels": [
+                    "Happiness"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1480.289,
+                "endTime": 1486.659,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "duygun",
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 1503.685,
+                "endTime": 1511.37,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 1514.738,
+                "endTime": 1522.066,
+                "labels": [
+                    "Sadness"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1527.388,
+                "endTime": 1534.342,
+                "labels": [
+                    "Surprise"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 1535.726,
+                "endTime": 1566.597,
+                "labels": [
+                    "Sadness",
+                    "Confusion"
+                ],
+                "annotators_count": 2,
+                "annotators": [
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1594.421,
+                "endTime": 1600.455,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 1649.909,
+                "endTime": 1659.654,
+                "labels": [
+                    "Confusion"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "michal"
+                ]
+            },
+            {
+                "startTime": 1667.388,
+                "endTime": 1682.153,
+                "labels": [
+                    "Surprise",
+                    "Confusion"
+                ],
+                "annotators_count": 3,
+                "annotators": [
+                    "duygun",
+                    "michal",
+                    "szymon"
+                ]
+            },
+            {
+                "startTime": 1684.318,
+                "endTime": 1702.347,
+                "labels": [
+                    "Disgust"
+                ],
+                "annotators_count": 1,
+                "annotators": [
+                    "szymon"
+                ]
+            }
+        ]
+    }
+]
