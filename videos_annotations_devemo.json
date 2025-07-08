@@ -7,7 +7,6 @@
                 "startTime": 10.63,
                 "endTime": 15.882,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -31,7 +30,6 @@
                 "startTime": 29.383,
                 "endTime": 35.785,
                 "labels": [
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -79,9 +77,7 @@
                 "startTime": 161.928,
                 "endTime": 182.204,
                 "labels": [
-                    "Anger",
-                    "Disgust",
-                    "Sadness"
+                    "Disgust"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -94,7 +90,6 @@
                 "startTime": 196.254,
                 "endTime": 206.742,
                 "labels": [
-                    "Sadness",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -108,8 +103,7 @@
                 "startTime": 204.826,
                 "endTime": 215.844,
                 "labels": [
-                    "Disgust",
-                    "Sadness"
+                    "Disgust"
                 ],
                 "annotators_count": 2,
                 "annotators": [
@@ -121,7 +115,6 @@
                 "startTime": 219.67,
                 "endTime": 228.567,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -134,9 +127,7 @@
                 "startTime": 257.758,
                 "endTime": 264.476,
                 "labels": [
-                    "Confusion",
-                    "Surprise",
-                    "Disgust"
+                    "Surprise"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -173,7 +164,6 @@
                 "startTime": 319.649,
                 "endTime": 331.593,
                 "labels": [
-                    "Anger",
                     "Disgust"
                 ],
                 "annotators_count": 2,
@@ -268,9 +258,7 @@
                 "startTime": 524.906,
                 "endTime": 535.443,
                 "labels": [
-                    "Anger",
-                    "Disgust",
-                    "Sadness"
+                    "Disgust"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -283,7 +271,6 @@
                 "startTime": 541.907,
                 "endTime": 548.292,
                 "labels": [
-                    "Sadness",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -346,10 +333,7 @@
                 "startTime": 641.303,
                 "endTime": 655.82,
                 "labels": [
-                    "Anger",
-                    "Happiness",
-                    "Surprise",
-                    "Confusion"
+                    "Surprise"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -400,10 +384,7 @@
                 "startTime": 731.73,
                 "endTime": 742.7,
                 "labels": [
-                    "Happiness",
-                    "Surprise",
-                    "Disgust",
-                    "Sadness"
+                    "Surprise"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -416,7 +397,6 @@
                 "startTime": 744.933,
                 "endTime": 753.304,
                 "labels": [
-                    "Disgust",
                     "Sadness"
                 ],
                 "annotators_count": 2,
@@ -440,7 +420,6 @@
                 "startTime": 764.149,
                 "endTime": 777.631,
                 "labels": [
-                    "Sadness",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -498,8 +477,6 @@
                 "startTime": 847.988,
                 "endTime": 863.042,
                 "labels": [
-                    "Happiness",
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -565,8 +542,6 @@
                 "startTime": 22.312,
                 "endTime": 31.634,
                 "labels": [
-                    "Happiness",
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -639,7 +614,6 @@
                 "startTime": 173.366,
                 "endTime": 180.256,
                 "labels": [
-                    "Anger",
                     "Disgust"
                 ],
                 "annotators_count": 3,
@@ -653,9 +627,7 @@
                 "startTime": 183.074,
                 "endTime": 190.724,
                 "labels": [
-                    "Anger",
-                    "Disgust",
-                    "Sadness"
+                    "Disgust"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -681,7 +653,6 @@
                 "startTime": 242.09,
                 "endTime": 249.879,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -695,9 +666,7 @@
                 "startTime": 272.481,
                 "endTime": 284.271,
                 "labels": [
-                    "Surprise",
-                    "Disgust",
-                    "Sadness"
+                    "Surprise"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -710,8 +679,6 @@
                 "startTime": 283.291,
                 "endTime": 291.863,
                 "labels": [
-                    "Anger",
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -737,7 +704,6 @@
                 "startTime": 357.735,
                 "endTime": 369.344,
                 "labels": [
-                    "Anger",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -751,9 +717,7 @@
                 "startTime": 402.362,
                 "endTime": 409.864,
                 "labels": [
-                    "Surprise",
-                    "Disgust",
-                    "Confusion"
+                    "Surprise"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -766,7 +730,6 @@
                 "startTime": 419.868,
                 "endTime": 425.764,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -790,7 +753,6 @@
                 "startTime": 445.4,
                 "endTime": 455.512,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -850,7 +812,6 @@
                 "startTime": 581.714,
                 "endTime": 589.312,
                 "labels": [
-                    "Anger",
                     "Disgust"
                 ],
                 "annotators_count": 2,
@@ -874,7 +835,6 @@
                 "startTime": 677.858,
                 "endTime": 689.826,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -888,7 +848,6 @@
                 "startTime": 708.7,
                 "endTime": 717.206,
                 "labels": [
-                    "Happiness",
                     "Surprise"
                 ],
                 "annotators_count": 3,
@@ -919,7 +878,6 @@
                 "startTime": 67.534,
                 "endTime": 80.699,
                 "labels": [
-                    "Happiness",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -956,7 +914,6 @@
                 "startTime": 130.949,
                 "endTime": 138.897,
                 "labels": [
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -980,7 +937,6 @@
                 "startTime": 184.621,
                 "endTime": 192.356,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -1073,7 +1029,6 @@
                 "startTime": 371.978,
                 "endTime": 380.465,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -1097,8 +1052,7 @@
                 "startTime": 404.29,
                 "endTime": 413.352,
                 "labels": [
-                    "Surprise",
-                    "Disgust"
+                    "Surprise"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -1111,8 +1065,7 @@
                 "startTime": 428.848,
                 "endTime": 436.482,
                 "labels": [
-                    "Happiness",
-                    "Disgust"
+                    "Happiness"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -1125,7 +1078,6 @@
                 "startTime": 444.564,
                 "endTime": 453.295,
                 "labels": [
-                    "Happiness",
                     "Surprise"
                 ],
                 "annotators_count": 3,
@@ -1152,7 +1104,6 @@
                 "startTime": 538.178,
                 "endTime": 573.291,
                 "labels": [
-                    "Happiness",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -1202,8 +1153,6 @@
                 "startTime": 694.069,
                 "endTime": 711.557,
                 "labels": [
-                    "Happiness",
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -1253,7 +1202,6 @@
                 "startTime": 788.843,
                 "endTime": 820.441,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -1279,8 +1227,6 @@
                 "startTime": 837.554,
                 "endTime": 844.591,
                 "labels": [
-                    "Anger",
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -1316,8 +1262,7 @@
                 "startTime": 906.808,
                 "endTime": 915.074,
                 "labels": [
-                    "Surprise",
-                    "Disgust"
+                    "Surprise"
                 ],
                 "annotators_count": 2,
                 "annotators": [
@@ -1396,8 +1341,7 @@
                 "startTime": 1009.924,
                 "endTime": 1021.105,
                 "labels": [
-                    "Surprise",
-                    "Confusion"
+                    "Surprise"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -1410,8 +1354,6 @@
                 "startTime": 1030.739,
                 "endTime": 1045.165,
                 "labels": [
-                    "Sadness",
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -1436,7 +1378,6 @@
                 "startTime": 1095.563,
                 "endTime": 1105.401,
                 "labels": [
-                    "Happiness",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -1461,7 +1402,6 @@
                 "startTime": 1177.56,
                 "endTime": 1190.355,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -1486,7 +1426,6 @@
                 "startTime": 1218.106,
                 "endTime": 1227.296,
                 "labels": [
-                    "Happiness",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -1499,7 +1438,6 @@
                 "startTime": 1228.939,
                 "endTime": 1236.523,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -1603,7 +1541,6 @@
                 "startTime": 1422.192,
                 "endTime": 1433.128,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -1746,9 +1683,7 @@
                 "startTime": 5.34,
                 "endTime": 17.167,
                 "labels": [
-                    "Confusion",
-                    "Surprise",
-                    "Disgust"
+                    "Surprise"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -1761,7 +1696,6 @@
                 "startTime": 15.239999999999998,
                 "endTime": 24.227,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -1808,7 +1742,6 @@
                 "startTime": 63.075,
                 "endTime": 73.523,
                 "labels": [
-                    "Fear",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -1821,7 +1754,6 @@
                 "startTime": 78.148,
                 "endTime": 88.969,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -1835,7 +1767,6 @@
                 "startTime": 123.08,
                 "endTime": 131.506,
                 "labels": [
-                    "Anger",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -1848,7 +1779,6 @@
                 "startTime": 144.459,
                 "endTime": 151.221,
                 "labels": [
-                    "Fear",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -1885,8 +1815,7 @@
                 "startTime": 209.932,
                 "endTime": 219.166,
                 "labels": [
-                    "Surprise",
-                    "Confusion"
+                    "Surprise"
                 ],
                 "annotators_count": 2,
                 "annotators": [
@@ -1898,7 +1827,6 @@
                 "startTime": 218.423,
                 "endTime": 228.267,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -2006,7 +1934,6 @@
                 "startTime": 394.096,
                 "endTime": 401.084,
                 "labels": [
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -2020,7 +1947,6 @@
                 "startTime": 448.605,
                 "endTime": 467.055,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -2136,8 +2062,6 @@
                 "startTime": 671.992,
                 "endTime": 682.337,
                 "labels": [
-                    "Happiness",
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -2224,7 +2148,6 @@
                 "startTime": 810.923,
                 "endTime": 817.312,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -2288,8 +2211,7 @@
                 "startTime": 902.578,
                 "endTime": 915.922,
                 "labels": [
-                    "Confusion",
-                    "Sadness"
+                    "Confusion"
                 ],
                 "annotators_count": 2,
                 "annotators": [
@@ -2313,7 +2235,6 @@
                 "startTime": 929.903,
                 "endTime": 935.647,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -2364,7 +2285,6 @@
                 "startTime": 991.925,
                 "endTime": 999.313,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -2377,7 +2297,6 @@
                 "startTime": 998.749,
                 "endTime": 1007.278,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -2407,7 +2326,6 @@
                 "startTime": 29.414,
                 "endTime": 40.081,
                 "labels": [
-                    "Anger",
                     "Disgust"
                 ],
                 "annotators_count": 2,
@@ -2442,7 +2360,6 @@
                 "startTime": 123.541,
                 "endTime": 134.21,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -2516,7 +2433,6 @@
                 "startTime": 421.87,
                 "endTime": 433.213,
                 "labels": [
-                    "Anger",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -2578,8 +2494,7 @@
                 "startTime": 648.488,
                 "endTime": 657.584,
                 "labels": [
-                    "Surprise",
-                    "Disgust"
+                    "Surprise"
                 ],
                 "annotators_count": 2,
                 "annotators": [
@@ -2591,7 +2506,6 @@
                 "startTime": 685.816,
                 "endTime": 695.916,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -2605,7 +2519,6 @@
                 "startTime": 748.525,
                 "endTime": 756.0,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -2641,7 +2554,6 @@
                 "startTime": 808.325,
                 "endTime": 814.571,
                 "labels": [
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -2665,7 +2577,6 @@
                 "startTime": 843.275,
                 "endTime": 860.098,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -2772,8 +2683,7 @@
                 "startTime": 1065.939,
                 "endTime": 1072.878,
                 "labels": [
-                    "Surprise",
-                    "Disgust"
+                    "Surprise"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -2798,7 +2708,6 @@
                 "startTime": 1095.791,
                 "endTime": 1104.944,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -2836,8 +2745,6 @@
                 "startTime": 1151.2,
                 "endTime": 1164.221,
                 "labels": [
-                    "Happiness",
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -2851,7 +2758,6 @@
                 "startTime": 1167.59,
                 "endTime": 1178.033,
                 "labels": [
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -2865,9 +2771,7 @@
                 "startTime": 1194.372,
                 "endTime": 1208.481,
                 "labels": [
-                    "Happiness",
-                    "Surprise",
-                    "Confusion"
+                    "Surprise"
                 ],
                 "annotators_count": 3,
                 "annotators": [
@@ -2892,7 +2796,6 @@
                 "startTime": 1223.458,
                 "endTime": 1236.041,
                 "labels": [
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -2927,7 +2830,6 @@
                 "startTime": 1296.787,
                 "endTime": 1309.047,
                 "labels": [
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -2964,8 +2866,6 @@
                 "startTime": 1357.736,
                 "endTime": 1369.226,
                 "labels": [
-                    "Happiness",
-                    "Disgust",
                     "Confusion"
                 ],
                 "annotators_count": 3,
@@ -3061,7 +2961,6 @@
                 "startTime": 1535.726,
                 "endTime": 1566.597,
                 "labels": [
-                    "Sadness",
                     "Confusion"
                 ],
                 "annotators_count": 2,
@@ -3096,7 +2995,6 @@
                 "startTime": 1667.388,
                 "endTime": 1682.153,
                 "labels": [
-                    "Surprise",
                     "Confusion"
                 ],
                 "annotators_count": 3,
