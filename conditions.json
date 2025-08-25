@@ -1,0 +1,38 @@
+[
+  {
+   "label": "backlight",
+    "description": "light from the background"
+  },
+  {
+   "label": "dark",
+    "description": "pure light condition"
+  },
+  {
+   "label": "shaky",
+    "description": "shaking video"
+  },
+  {
+   "label": "blurry",
+    "description": ""
+  },
+  {
+   "label": "hands",
+    "description": ""
+  },
+  {
+   "label": "headphones",
+    "description": ""
+  },
+  {
+   "label": "bottom_camera",
+    "description": ""
+  },
+  {
+   "label": "glasses",
+    "description": ""
+  },
+  {
+   "label": "backlight",
+    "description": ""
+  }
+]

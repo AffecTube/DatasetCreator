@@ -1,7 +1,7 @@
 {
   "input_dir": "/home/wrobel/Dropbox/eti/papers/2025/DevEmo2/devemo",
   "output_dir": "./dataset2",
-  "output_filename": "videos_annotations_devemo.json",
+  "output_filename": "videos_annotations_devemo_final.json",
   "acceptance_threshold": 0.2,
   "match_labels": false,
   "raw_annotations_only": false,

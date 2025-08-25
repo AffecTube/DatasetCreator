@@ -390,28 +390,49 @@ parse_options()
 
 # raw_videos_annotations_orig = process_annotation_files()
 # raw_videos_annotations_loves = process_annotation_files_loves()
-raw_videos_annotations = process_annotation_files_loves()
+# raw_videos_annotations = process_annotation_files_loves()
 # raw_videos_annotations = {**raw_videos_annotations_orig, **raw_videos_annotations_loves}
-if config['raw_annotations_only']:
-    dict_to_json_file(raw_videos_annotations)
-    exit(0)
+# if config['raw_annotations_only']:
+#     dict_to_json_file(raw_videos_annotations)
+#     exit(0)
+#
+# merged_videos_annotations = merge_videos_annotations(raw_videos_annotations)
+# if config['merged_annotations_only']:
+#     dict_to_json_file(merged_videos_annotations)
+#     exit(0)
 
-merged_videos_annotations = merge_videos_annotations(raw_videos_annotations)
-if config['merged_annotations_only']:
-    dict_to_json_file(merged_videos_annotations)
-    exit(0)
 
+annotations = json_file_to_dict('videos_annotations_devemo.json')
+
+print(annotations)
 os.makedirs(config['output_dir'], exist_ok=True)
-for i, video_annotations in enumerate(merged_videos_annotations):
-    if config['download_from_youtube']:
-        video_download(video_annotations['video_code'], config['output_dir'])
+count = 1
+merged_videos_annotations = []
+for video_file_annotation in annotations:
+    video_filename = video_file_annotation['video_code']
+    if not os.path.isfile(f"experts/{video_filename}.mp4"):
+        print(f"Video file experts/{video_filename}.mp4 does not exists")
+        continue
 
-    if os.path.isfile(f"{config['output_dir']}/{video_annotations['video_code']}.mp4"):
-        merged_videos_annotations[i] = generate_annotated_fragments(video_annotations)
+    for i, video_annotations in enumerate(video_file_annotation['annotations']):
+        if video_annotations['annotators_count'] > 1:
+            merged_videos_annotations.append({
+                'filename': f"devemo2_{count:03d}.mp4",
+                'label': video_annotations['labels'][0],
+                'agreement_ratio': round(video_annotations['annotators_count']/3, 2),
+            })
+            # print(merged_videos_annotations[count-1])
+            pipe = (
+                ffmpeg.input(f"experts/{video_filename}.mp4")
+                .trim(start=video_annotations['startTime'], end=video_annotations['endTime'])
+                .setpts('PTS-STARTPTS')
+                .output(f"{config['output_dir']}/devemo2_{count:03d}.mp4")
+                .overwrite_output()
+                .run(quiet=True)
+            )
+            count += 1
 
-    else:
-        print(f"Video file {config['output_dir']}/{video_annotations['video_code']}.mp4 does not exists")
-        exit(1)
 
 dict_to_json_file(merged_videos_annotations)
+exit(0)
 
