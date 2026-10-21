@@ -1,6 +1,6 @@
 import os.path
 
-from pytube import YouTube
+from yt_dlp import YoutubeDL
 
 
 def video_download(video_name, out_dir):
@@ -12,8 +12,16 @@ def video_download(video_name, out_dir):
     file_name = f"{video_name}.mp4"
     if not os.path.exists(f"{out_dir}/{file_name}"):
         print(f"Downloading https://youtu.be/{video_name} ...")
-        yt = YouTube(f"https://youtu.be/{video_name}")
-        yt = yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first().download(filename=f"{out_dir}/{file_name}")
+        ydl_opts = {
+            # best mp4 video + m4a audio merged into mp4, fall back to best single mp4 file
+            'format': 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]',
+            'merge_output_format': 'mp4',
+            'outtmpl': f"{out_dir}/{file_name}",
+            'quiet': True,
+            'no_warnings': True,
+        }
+        with YoutubeDL(ydl_opts) as ydl:
+            ydl.download([f"https://youtu.be/{video_name}"])
         print(f"Video downloaded: {out_dir}/{file_name}")
     else:
         print(f"File {video_name} is already downloaded...")
