@@ -29,7 +29,7 @@ def parse_options():
     parser.add_option("-d", "--download_from_youtube",
                       action="store_true", dest="download_from_youtube",
                       help="download video files from YouTube. If FALSE, video file should be already in  OUTPUT DIR")
-    parser.add_option("-n", "--margin", dest="margin",
+    parser.add_option("-n", "--margin", dest="margin", type="float",
                       help="margin added to the annotated fragment (in seconds)", metavar="VALUE")
     (options, args) = parser.parse_args()
 
@@ -299,17 +299,15 @@ def generate_annotated_fragments(single_video_annotations):
     :param single_video_annotations: list of merged annotations of a single video file
     :return: update with fragment file name annotation list
     """
-    fragments_count = 1
-    leading_zeros_number = len(str(single_video_annotations['fragments_count']))
     input_video_file = f"{single_video_annotations['video_code']}.mp4"
     print(f"Processing {input_video_file}, extracting {single_video_annotations['fragments_count']} fragments")
     for i, annotation in enumerate(single_video_annotations['annotations']):
-        output_video_file = f"{single_video_annotations['video_code']}_{str(fragments_count).zfill(leading_zeros_number)}.mp4"
-        print(f"Extracting: {config['output_dir']}/{output_video_file}")
         start_time = annotation['startTime'] - config['margin']
         if start_time < 0:
             start_time = 0
         end_time = annotation['endTime'] + config['margin']
+        output_video_file = f"{single_video_annotations['video_code']}_{start_time:.2f}-{end_time:.2f}.mp4"
+        print(f"Extracting: {config['output_dir']}/{output_video_file}")
         pipe = (
             ffmpeg.input(f"{config['output_dir']}/{input_video_file}")
             .trim(start=start_time, end=end_time)
@@ -318,7 +316,6 @@ def generate_annotated_fragments(single_video_annotations):
             .overwrite_output()
             .run(quiet=True)
         )
-        fragments_count += 1
         single_video_annotations['annotations'][i]['filename'] = output_video_file;
         single_video_annotations['annotations'][i]['startTime'] = round(start_time, 2);
         single_video_annotations['annotations'][i]['endTime'] = round(end_time, 2);
